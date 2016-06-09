@@ -3,6 +3,10 @@ body{
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
 }
+p{
+  font-family: "Proxima Nova";
+  &.lead{ font-size: 1.45rem;}
+}
 
 //Headers
 .display-1{
@@ -29,10 +33,20 @@ body{
 
 
 //Buttons
+.btn{
+  &.round{
+    border-radius: 23px;
+    border-width: 2px;
+  }
+}
 .btn-lg{
   font-size: 1.1rem;
   &.round {
     border-radius: 30px;
   }
 }
-.btn.round{ border-width: 2px; }
+.btn-sm{
+  &.round {
+    border-radius: 20px;
+  }
+}
