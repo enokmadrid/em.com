@@ -69,3 +69,41 @@ p{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   }
 }
+
+.flexbox-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 10vmax;
+  .flex-link{
+    background: #444;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: #888;
+    &:hover{
+      background: #222;
+      text-decoration: none;
+    }
+    &.active{
+      background: #000;
+      border-bottom: solid 6px #E30153;
+      color: #E30153;
+    }
+    i{
+      font-size: 30px;
+      span{
+        display: block;
+        font-family: "poppins";
+        font-size: 18px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
+
