@@ -50,3 +50,22 @@ p{
     border-radius: 20px;
   }
 }
+.brand-gradient{
+  $brand-primary:             #E30153;
+  $brand-secondary:           #AD1C61;
+  background: $brand-secondary; /* Old browsers */
+  background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: none;
+
+  &.btn:hover{
+
+    background: $brand-secondary; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-45deg, $brand-secondary 0%,$brand-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+}
