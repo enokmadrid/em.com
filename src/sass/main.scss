@@ -1,115 +1,119 @@
-body{
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-}
-p{
-  font-family: "Proxima Nova";
-  &.lead{ font-size: 1.45rem;}
-}
+@import "brand-colors";
+@import "navigation";
+@import "typography";
+@import "buttons";
 
-//Headers
-.display-1{
-  font-weight: 600;
-  letter-spacing: -6px;
-  small{ font-size: 70%; letter-spacing: -3px; }
-}
-.display-2{
-  font-weight: 600;
-  letter-spacing: -4px;
-  small{ font-size: 60%; letter-spacing: -2px; }
-}
-.display-3{
-  font-weight: 600;
-  letter-spacing: -3px;
-  small{ font-size: 55%; letter-spacing: -2px; }
-}
-.display-4{
-  font-weight: 600;
-  letter-spacing: -1px;
-  small{ font-size: 50%; letter-spacing: -1px; }
-}
-
-
-
-//Buttons
-.btn{
-  &.round{
-    border-radius: 23px;
-    border-width: 2px;
-  }
-}
-.btn-lg{
-  font-size: 1.1rem;
-  &.round {
-    border-radius: 30px;
-  }
-}
-.btn-sm{
-  &.round {
-    border-radius: 20px;
-  }
-}
-.brand-gradient{
-  $brand-primary:             #E30153;
-  $brand-secondary:           #AD1C61;
-  background: $brand-secondary; /* Old browsers */
-  background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  border: none;
-
-  &.btn:hover{
-
-    background: $brand-secondary; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-45deg, $brand-secondary 0%,$brand-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  }
-}
-
-.flexbox-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
-  flex-wrap: wrap;
-  height: 10vmax;
-  .flex-link{
-    background: #373245;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    color: #8787A0;
-    transition: all 0.5s ease;
-    &:hover{
-      background: #211E29;
-      text-decoration: none;
-      transition: all 0.5s ease;
-      i{ color: #E30153; }
+.jumbotron-fluid{
+  margin:0;
+  padding: 220px 0 60px;
+  &.dark{
+    background: $brand-black;
+    h1,h2,h3,h4,h5,h6,p,a{
+      color: white;
     }
-    &.active{
-      background: #211E29;
-      border-bottom: solid 6px #E30153;
-      color: #E30153;
+    &.shift-up { margin-top: -100px; }
+    .lead{ margin-top: 20px; }
+    .btn {
+      margin-top: 60px;
     }
-    i{
-      transition: all 0.5s ease;
-      font-size: 28px;
-      span{
-        display: block;
-        font-family: "poppins";
-        font-size: 12px;
-        font-weight: 600;
-        padding-top: 13px;
-        color: #fff;
+    .scroll{
+      display: block;
+      margin-top: 140px;
+      text-align: center;
+      i{
+        font-size: 36px;
+        color: white;
+        opacity: 0.3;
       }
     }
   }
+  &.hero{
+    background-image: url("../images/hero.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
+
+// ********* ABOUT *********
+#about{
+  background: #f7f7f9;
+  padding: 100px 0;
+  .copy-intro{
+    margin-top: 10px;
+    .c-primary{
+      color: $brand-primary;
+    }
+  }
+  .copy-about{
+    margin-top: 40px;
+  }
+}
+
+.gravatar{
+  border-radius: 50%;
+  opacity: 0.7;
+  height:140px;
+  width:140px;
+  margin-top: 10px;
+}
+
+
+// ********* WHAT I DO *********
+#what-i-do{
+  background: white;
+  padding: 100px 0;
+  .card{
+    padding: 25px;
+    margin: 10px;
+    flex: 1;
+    img{
+      width: 150px;
+      height: 150px;
+      margin: 30px 0;
+    }
+    .card-subtitle, p{
+      text-align: center;
+      display: block;
+    }
+    .card-subtitle{
+      font-size: 24px;
+      font-weight: 600;
+      padding-bottom: 15px;
+
+    }
+  }
+
+}
+.section-title{
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  h1,h2,h3,h4,h5,h6,p{
+    text-align: center;
+    display: block;
+  }
+  .section-subtitle{
+    font-size: 22px;
+  }
+}
+
+// ********* MY PROCESS *********
+#my-process{
+  .flexbox-container{
+    height: 16vmax;
+    color: white;
+    &:hover{ text-decoration: none; }
+    h4{
+      display: flex;
+      align-items: center;
+      margin: 0;
+      i{
+        opacity: 0.5;
+        padding-left: 20px;
+      }
+    }
+  }
+
+}

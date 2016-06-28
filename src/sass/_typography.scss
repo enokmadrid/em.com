@@ -1,0 +1,43 @@
+// FONT SMOOTHING
+body{
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// FONT STYLES
+p{
+  font-family: "Proxima Nova";
+  &.lead{ font-size: 1.45rem;}
+  line-height: 1.7rem;
+  padding-bottom: 14px;
+  color: $gray-light;
+  font-weight: 400;
+}
+
+// HEADERS
+.display-1{
+  font-weight: 600;
+  letter-spacing: -6px;
+  small{ font-size: 70%; letter-spacing: -3px; }
+}
+.display-2{
+  font-weight: 600;
+  letter-spacing: -4px;
+  small{ font-size: 60%; letter-spacing: -2px; }
+}
+.display-3{
+  font-weight: 600;
+  letter-spacing: -3px;
+  small{ font-size: 55%; letter-spacing: -2px; }
+}
+.display-4{
+  font-weight: 600;
+  letter-spacing: -1px;
+  small{ font-size: 50%; letter-spacing: -1px; }
+}
+
+// Columns
+.columns-split{
+  column-count: 2;
+}

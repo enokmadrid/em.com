@@ -1,0 +1,97 @@
+/*
+*** NAVIGATION FLEXBOX ***
+*/
+.flexbox-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  &.mobile-menu{
+    height: 10vmax;
+  }
+  .flex-link{
+    background: $brand-black-light;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: #8787A0;
+    transition: all 0.5s ease;
+    &:hover{
+      background: $brand-black;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      i{ color: $brand-primary; }
+    }
+    &.active{
+      background: $brand-black;
+      border-bottom: solid 6px $brand-primary;
+      color: $brand-primary;
+    }
+    i{
+      transition: all 0.5s ease;
+      font-size: 28px;
+      span{
+        display: block;
+        font-family: $font-family-sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        padding-top: 13px;
+        color: #fff;
+      }
+    }
+  }
+
+  .box{
+    list-style: none;
+
+    width: 40px;
+    height: 100px;
+    flex:1;
+    align-items: center;
+    justify-content: center;
+  }
+  .box:first-child,
+  .box:last-child{
+    flex:1;
+    div{
+      display: flex;
+      height: inherit;
+      align-items: center;
+      justify-content: center;
+      i{
+        color:white;
+        font-size: 32px;
+      }
+    }
+  }
+  .box.navigation{
+    flex:4;
+
+    ul{
+      display: flex;
+      height: inherit;
+      justify-content: center;
+      li{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: "Proxima Nova";
+        font-size: 20px;
+        margin: 0 30px;
+        a{
+          color: #fff;
+          &:hover{
+            transition: all 0.5s ease;
+            color: $brand-primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
