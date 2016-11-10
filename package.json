@@ -27,5 +27,8 @@
   },
   "author": "Emil Smith",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ChewyJetpack/emils-nuke-proof-intergalactic-boilerplate#readme"
+  "homepage": "https://bitbucket.org/ChewyJetpack/emils-nuke-proof-intergalactic-boilerplate#readme",
+  "dependencies": {
+    "uglify-js": "^2.7.0"
+  }
 }
