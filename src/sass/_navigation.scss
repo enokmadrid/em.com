@@ -10,26 +10,19 @@
   flex-wrap: wrap;
   &.mobile-menu{
     height: 10vmax;
-  }
-  .flex-link{
-    background: $brand-black-light;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-    color: #8787A0;
-    transition: all 0.5s ease;
-    &:hover{
-      background: $brand-black;
-      text-decoration: none;
-      transition: all 0.5s ease;
-      i{ color: $brand-primary; }
-    }
-    &.active{
-      background: $brand-black;
-      border-bottom: solid 6px $brand-primary;
-      color: $brand-primary;
+    .flex-link{
+      background: $brand-black-light;
+      color: #8787A0;
+      &:hover{
+        background: $brand-black;
+        text-decoration: none;
+        i{ color: $brand-primary; }
+      }
+      &.active{
+        background: $brand-black;
+        border-bottom: solid 6px $brand-primary;
+        color: $brand-primary;
+      }
     }
     i{
       transition: all 0.5s ease;
@@ -43,6 +36,36 @@
         color: #fff;
       }
     }
+  }
+  &.flexbox-links{
+    background-color: $brand-black;
+    .flex-link{
+      max-width: 550px;
+      max-height: 550px;
+      &:hover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        opacity: 0.30;
+        -moz-opacity: 30%;
+        -webkit-opacity: 30%;
+        z-index: 2;
+      }
+    }
+  }
+  .flex-link{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    transition: all 0.5s ease;
+    &:hover{
+      transition: all 0.5s ease;
+    }
+    &.flex-text-left{ justify-content: flex-start; }
+    &.flex-text-right{ justify-content: flex-end; }
+
   }
 
   .box{

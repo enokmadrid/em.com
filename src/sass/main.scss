@@ -169,3 +169,26 @@
 }
 .project--image {
 }
+
+.footer-page{
+    margin:0;
+    padding: 150px 0 0;
+    &.dark{
+      background: $brand-black;
+    }
+    .btn-lg{ margin-bottom: 100px; }
+    .footer--row{
+      background: rgba(0,0,0,.2);
+      small:not(i){ color: white; }
+      i{ color: $brand-primary; }
+      div{ padding: 20px 40px; }
+    }
+
+  .flex-link{
+    li{
+      display: inline-flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+  }
+}
