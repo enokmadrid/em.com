@@ -103,7 +103,7 @@
 // ********* MY PROCESS *********
 #my-process{
   .flexbox-container{
-    height: 11.5vmax;
+    height: 12.5vmax;
     color: white;
     &:hover{ text-decoration: none; }
     h4{
@@ -127,7 +127,10 @@
 //*********** FEATURED PROJECT ***********
 .project--fullwidth{
   background: #333;
-  padding: 160px 0;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
   h1, li, p, a{
     color: #fff;
   }
