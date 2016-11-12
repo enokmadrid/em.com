@@ -1,5 +1,8 @@
 //Buttons
 .btn{
+  transition: all 0.5s ease;
+  &:hover, &:active, &:focus{ transition: all 0.5s ease; }
+
   &.round{
     border-radius: 23px;
     border-width: 2px;
@@ -14,5 +17,35 @@
 .btn-sm{
   &.round {
     border-radius: 20px;
+  }
+}
+
+.dark{
+  .btn{
+    &.btn-primary-outline{
+      color: $brand-primary;
+      &:hover, &:active, &:focus{ color: white; }
+    }
+    &.btn-secondary-outline{
+      color: white;
+      border-color: white;
+      &:hover, &:active, &:focus{ color: #000000; background: white; }
+    }
+    &.btn-success-outline{
+      color: $brand-success;
+      &:hover, &:active, &:focus{ color: white; }
+    }
+    &.btn-info-outline{
+      color: $brand-info;
+      &:hover, &:active, &:focus{ color: white; }
+    }
+    &.btn-warning-outline{
+      color: $brand-warning;
+      &:hover, &:active, &:focus{ color: white; }
+    }
+    &.btn-danger-outline{
+      color: $brand-danger;
+      &:hover, &:active, &:focus{ color: white; }
+    }
   }
 }

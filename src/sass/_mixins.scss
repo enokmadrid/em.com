@@ -7,3 +7,20 @@
   font-size: $size; //Fallback in px
   font-size: calculateRem($size);
 }
+
+/*======================================
+=            NO GUTTER CODE            =
+======================================*/
+.no-gutter {
+  padding-right:0;
+  padding-left:0;
+}
+
+/*======================================
+=         INVERSE DARK COLORS          =
+======================================*/
+.container--inverse{
+  h1,h2,h3,h4,h5,h6,p,b,span,li{
+    color: #fff;
+  }
+}

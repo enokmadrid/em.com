@@ -1,3 +1,4 @@
+@import 'mixins.scss';
 @import "brand-colors";
 @import "navigation";
 @import "typography";
@@ -102,7 +103,7 @@
 // ********* MY PROCESS *********
 #my-process{
   .flexbox-container{
-    height: 16vmax;
+    height: 11.5vmax;
     color: white;
     &:hover{ text-decoration: none; }
     h4{
@@ -115,5 +116,53 @@
       }
     }
   }
+}
 
+//************ Section Subdivision *********
+.container-fluid{ padding: 0; margin: 0;}
+.section-subdivision{
+  padding: 60px 0;
+}
+
+//*********** FEATURED PROJECT ***********
+.project--fullwidth{
+  background: #333;
+  padding: 160px 0;
+  h1, li, p, a{
+    color: #fff;
+  }
+  h1{
+    font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+  }
+  .project-title{
+    font-weight: 600;
+  }
+  .project-tags{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    li{
+      display: inline;
+      font-size: 13px;
+      &:not(:first-child){
+        padding-left: 4px;
+        &::before{ content: "-"; padding-right: 8px; }
+      }
+    }
+  }
+  .project-text{
+    margin-bottom: 35px;
+  }
+}
+
+.project--description{
+}
+.project--image {
 }
