@@ -193,3 +193,24 @@
     }
   }
 }
+
+
+
+// OTHER CSS FLOATING DIC IMAGE
+.project--image-container{
+  display: flex;
+  flex-direction: row-reverse;
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+.project--ablv {
+  margin-top: -100px;
+  margin-bottom: -200px;
+}
+
+.grid-overflow {
+  float: right;
+  overflow: hidden;
+}
