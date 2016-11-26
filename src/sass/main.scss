@@ -214,3 +214,11 @@
   float: right;
   overflow: hidden;
 }
+
+//************ Icon Fonts *********
+
+.mobile-menu{
+  .icon{
+    &:before{ font-size: 40px; }
+  }
+}
