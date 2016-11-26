@@ -1,27 +1,27 @@
 ==
 <div class="flexbox-container mobile-menu" style="background:#f2f2f2;">
-    <a href="#" class="flex-link active">
-        <i class="icon-home icons">
+    <a href="{{ 'homepage'|page }}" class="flex-link {% if this.page.id == 'homepage' %}active{% endif %}">
+        <i class="icon icon-home">
             <span>Home</span>
         </i>
     </a>
-    <a href="#" class="flex-link">
-        <i class="icon-screen-desktop icons">
+    <a href="{{ '/work'|page }}" class="flex-link {% if this.page.id == 'work' %}active{% endif %}">
+        <i class="icon icon-toolbox">
             <span>Work</span>
         </i>
     </a>
-    <a href="#" class="flex-link">
-        <i class="icon-organization icons">
+    <a href="{{ 'process-discovery'|page }}" class="flex-link {% if this.page.id == 'process-discovery' %}active{% endif %}">
+        <i class="icon icon-process">
             <span>Process</span>
         </i>
     </a>
-    <a href="#" class="flex-link">
-        <i class="icon-user icons">
+    <a href="{{ 'about'|page }}" class="flex-link {% if this.page.id == 'about' %}active{% endif %}">
+        <i class="icon icon-person">
             <span>About</span>
         </i>
     </a>
-    <a href="#" class="flex-link">
-        <i class="icon-paper-plane icons">
+    <a href="{{ 'contact'|page }}" class="flex-link {% if this.page.id == 'contact' %}active{% endif %}">
+        <i class="icon icon-email-send-1">
             <span>Contact</span>
         </i>
     </a>
