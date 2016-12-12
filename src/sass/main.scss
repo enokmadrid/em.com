@@ -222,3 +222,32 @@
     &:before{ font-size: 40px; }
   }
 }
+
+
+//********* PROCESS STEPS *********
+.bg--gray{
+  background: #F9F9F9;
+}
+.process--step{
+  padding: 120px 0;
+  h3, .process--step-title{
+    font-weight: 700;
+    small{ text-transform: uppercase;}
+  }
+  h4,h5{ font-weight: 600; }
+  .process--step-subtext{ color: $brand-primary; }
+  .process--icon{
+    font-size: 5rem;
+    text-align: center;
+    display: block;
+    padding-top: 40px;
+    padding-right: 25%;
+  }
+  .process--tools{
+    margin-top: 20px;
+    li{ line-height: 32px; }
+  }
+  .process--images{
+    margin-top: 40px;
+  }
+}

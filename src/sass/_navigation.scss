@@ -51,6 +51,9 @@
         -webkit-opacity: 30%;
         z-index: 2;
       }
+      &:focus{
+        text-decoration: none;
+      }
     }
   }
   .flex-link{
@@ -65,7 +68,38 @@
     }
     &.flex-text-left{ justify-content: flex-start; }
     &.flex-text-right{ justify-content: flex-end; }
+    &:focus{
+      text-decoration: none;
+    }
+  }
 
+  &.process--menu{
+    height: 10vmax;
+    .flex-link{
+      background: white;
+      &:hover{
+        background: #f2f2f2;
+        text-decoration: none;
+        i{ color: $brand-primary; }
+      }
+      &.active{
+        background: $brand-black;
+        border-bottom: solid 6px $brand-primary;
+        color: $brand-primary;
+      }
+      &:focus{
+        text-decoration: none;
+      }
+    }
+    span{
+      padding: 0 20px 10px 20px;
+      font-family: $font-family-sans-serif;
+    }
+    i{
+      transition: all 0.5s ease;
+      font-size: 28px;
+
+    }
   }
 
   .box{

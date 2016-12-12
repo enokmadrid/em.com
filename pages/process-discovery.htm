@@ -21,39 +21,65 @@ robot_follow = "follow"
 
 {% partial "navigation-process" %}
 
-<section class="container-fluid">
+<section class="container-fluid bg--gray">
 
         <div class="container">
-            <div class="row">
-                <h3 class="col-md-6 copy-intro">Step 1 Discovery</h3>
-                <div class="col-md-6">
-                    <img class="gravatar" src="{{ 'assets/images/enok-gravatar.jpeg' | theme }}" alt="">
+            <div class="row process--step">
+                <div class="col-md-4 process--info">
+                    <h3 class="process--step-title"><small>Step 1</small> Discovery</h3>
+
+                    <i class="icon icon-binoculars process--icon"></i>
+
+                    <span class="process--step-subtext">Tools I like to use include:</span>
+                    <ul class="process--tools">
+                        <li>Google Analytics</li>
+                        <li>Google Docs / Draw</li>
+                        <li>HotJar</li>
+                        <li>Peek UserTesting</li>
+                    </ul>
+                </div>
+                <div class="col-md-8 process--about">
+                    <h5 class="process--title">Product Data Analysis</h5>
+                    <p>
+                        I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
+                    </p>
+                    <p>
+                        If it’s an existing product, I’ll sometimes run analytics and run some user tests.
+                    </p>
+                    <h5 class="process--title">Product Data Analysis</h5>
+                    <p>
+                        Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
+                    </p>
+
                 </div>
 
-                <div class="col-md-6 copy-about">
-                    <p>
-                        My name is Enok Madrid, based in Las Vegas with over 4 years of experience and I’m a perfectionist - focused on uniting simplicity, form and function in modern web applications, with a fresh touch of design. That’s what makes me tick.
-                    </p>
-                    <p>
-                        I’ve worked on all sorts of projects, and they all have one thing in common, that they had to sell, market and be promoted to make profits. The only way to achieve this is by going through the UX process, with focus on the user satisfaction and making sure everything is aligned with the business objectives. As much as I love design, how the product works is the most important and I achieve this by doing user research, usability testing, prototyping and reiterating the process. Every single detail matters - structure, typography, photography, proportions, colors, patterns, iconography, content, etc. Everything must be synchronized to complete the maximum user experience.
-                    </p>
-                </div>
-                <div class="col-md-6 copy-about">
-                    <p>
-                        My strength is in the design process and front-end development. Turning pixels into beautiful, semantic HTML & CSS. I have solid experience with front-end frameworks like Foundation and Twitter Bootstrap, as well as CMS systems including Wordpress, and October cms. I also have experience working on front-end templating in collaboration with backend engineers using frameworks like Symfony 2, Laravel, and Rails. Yes, I get down on the terminal too.
-                    </p>
-                    <p>
-                        Beyond the web spectrum, my interests include illustrating icons and graphical assets like mascots, logos and the whole branding process. When I’m not in front of the computer, I’ll switch gears to my creative side and work on some
-                        <a target="_blank" href="http://www.airbrushlasvegas.com/enok-madrid">airbrush paintings</a> or simply plan for my next
-                        <a target="_blank" href="http://www.enok-one.com">graffiti mural</a>. I’m always into something.
-                    </p>
-                    <a class="btn btn-primary-outline round" href="#" role="button">View Resume</a>
-
+                <div class="col-md-12 process--images">
+                    <div class="row m-t-25">
+                        <div class="col-xs-4">
+                            <img class="img-fluid" src="http://john-ellison.com/images/thengine-brainstorm-3.jpg" alt="">
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-fluid" src="http://john-ellison.com/images/thengine-brainstorm-1.jpg" alt="">
+                        </div>
+                        <div class="col-xs-4">
+                            <img class="img-fluid" src="http://john-ellison.com/images/thengine-brainstorm-1.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
 
 </section> <!-- /container -->
+
+<div class="flexbox-container process--menu">
+    <a href="#" class="flex-link btn">
+        <i class="icon icon-arrow-left"></i><span>Previous Step</span>
+    </a>
+    <a href="#" class="flex-link">
+        <span>Next Step</span> <i class="icon icon-arrow-right"></i>
+    </a>
+</div>
 
 
 
