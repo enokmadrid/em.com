@@ -106,12 +106,12 @@ gulp.task('css', ['vendor-css', 'sass'], function () {
 });
 
 gulp.task('sass:watch', function () {
-	return gulp.watch('src/sass/*.scss', ['css']);
+	return gulp.watch(['src/sass/*.*', 'src/sass/media-screens/*.*'], ['css']);
 });
 
 gulp.task('all:watch', function () {
 	gulp.watch('src/js/*.*', ['scripts']);
-	gulp.watch(['src/css/*.*', 'src/sass/*.*'], ['css']);
+	gulp.watch(['src/css/*.*', 'src/sass/*.*', 'src/sass/media-screens/*.*'], ['css']);
 });
 
 gulp.task('default', function() {

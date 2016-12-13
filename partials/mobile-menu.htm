@@ -1,5 +1,5 @@
 ==
-<div class="flexbox-container mobile-menu" style="background:#f2f2f2;">
+<div class="flexbox-container mobile-menu hidden-md-up">
     <a href="{{ 'homepage'|page }}" class="flex-link {% if this.page.id == 'homepage' %}active{% endif %}">
         <i class="icon icon-home">
             <span>Home</span>
@@ -15,12 +15,12 @@
             <span>Process</span>
         </i>
     </a>
-    <a href="{{ 'about'|page }}" class="flex-link {% if this.page.id == 'about' %}active{% endif %}">
-        <i class="icon icon-person">
-            <span>About</span>
-        </i>
-    </a>
-    <a href="{{ 'contact'|page }}" class="flex-link {% if this.page.id == 'contact' %}active{% endif %}">
+    <!--<a href="{{ 'about'|page }}" class="flex-link {% if this.page.id == 'about' %}active{% endif %}">-->
+        <!--<i class="icon icon-person">-->
+            <!--<span>About</span>-->
+        <!--</i>-->
+    <!--</a>-->
+    <a href="javascript:void(0)" onclick="openNav()" class="flex-link {% if this.page.id == 'contact' %}active{% endif %}">
         <i class="icon icon-email-send-1">
             <span>Contact</span>
         </i>

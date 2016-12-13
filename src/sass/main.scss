@@ -4,6 +4,7 @@
 @import "typography";
 @import "buttons";
 
+
 .jumbotron-fluid{
   margin:0;
   padding: 220px 0 60px;
@@ -59,7 +60,6 @@
   width:140px;
   margin-top: 10px;
 }
-
 
 // ********* WHAT I DO *********
 #what-i-do{
@@ -228,26 +228,37 @@
 .bg--gray{
   background: #F9F9F9;
 }
-.process--step{
-  padding: 120px 0;
-  h3, .process--step-title{
+.content--container{
+  h3, .content--step-title{
     font-weight: 700;
     small{ text-transform: uppercase;}
   }
   h4,h5{ font-weight: 600; }
-  .process--step-subtext{ color: $brand-primary; }
-  .process--icon{
+  .content--step-subtext{ color: $brand-primary; }
+  .content--icon{
     font-size: 5rem;
     text-align: center;
     display: block;
     padding-top: 40px;
     padding-right: 25%;
   }
-  .process--tools{
+  .content--tools{
     margin-top: 20px;
-    li{ line-height: 32px; }
+    padding-left: 10px;
+    color: $gray-light;
+    font-size: 0.85rem;
+    li {
+      list-style: none;
+      line-height: 32px;
+    }
+    li:before {
+      content:"·";
+      font-size:45px;
+      vertical-align:middle;
+      margin-right: 15px;
+    }
   }
-  .process--images{
+  .content--images{
     margin-top: 40px;
   }
 }
@@ -258,15 +269,73 @@
   font-size: 26px;
   font-weight: 300;
   line-height: 1.8;
-  padding: 45px 0;
+  padding-bottom: 100px;
   text-align: center;
   font-family: "Merriweather";
 }
-
+.content--container, .cms-editable{ padding: 120px 0; }
+.content--title{
+  font-weight: 600;
+  &:not(:first-child){ margin-top: 50px; }
+}
 .cms-editable{
-  padding: 120px 0;
   display: block;
   text-align: center;
   img{ margin: 0 auto; padding-bottom: 40px; }
   h1,h2,h3,h4,h5,h6,p{ padding-bottom: 20px; }
 }
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  //background-color: rgb(0,0,0);
+  background-color: rgba($brand-black-light, 0.95);
+  overflow-y: hidden;
+  transition: 0.5s;
+  a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  a:hover, a:focus {
+    color: #f1f1f1;
+  }
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+@import "media-queries";

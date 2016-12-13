@@ -1,5 +1,5 @@
 ==
-<nav class="flexbox-container">
+<nav class="flexbox-container hidden-sm-down">
     <div class="box logo">
         <div>
             <img src="{{ 'assets/images/em-logo.svg' | theme }}" alt="Enok Madrid Logo" height="46" width="46">
@@ -10,12 +10,51 @@
             <li><a href="">Work</a></li>
             <li><a href="{{ 'process-discovery'|page }}">Process</a></li>
             <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
         </ul>
     </div>
     <div class="box">
         <div>
-            <i class="icon-menu icons"></i>
+
+            <a href="javascript:void(0)" onclick="openNav()" class="btn btn-primary-outline round btn-sm">
+                Message me
+            </a>
         </div>
     </div>
 </nav>
+
+<div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleTextarea">Example textarea</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                </div>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+
+</script>

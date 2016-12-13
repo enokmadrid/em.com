@@ -1,0 +1,35 @@
+// Extra small devices (portrait phones, less than 544px)
+@media (max-width: 543px) {
+  // mobile menu with smaller icons
+  .flexbox-container.mobile-menu{
+    height: 85px;
+    i{
+      &:before{font-size: 28px;}
+      span{
+        font-size: 12px;
+        padding-top: 0;
+        font-style: normal;
+        margin-top:-5px;
+      }
+    }
+  }
+
+  // display text
+  .display-2{
+    font-size: 2.5rem;
+  }
+  .lead{ font-size: 22px !important; }
+  .hero{
+    text-align: center;
+    .btn{ margin-top: 20px !important; }
+  }
+  .jumbotron-fluid{
+    padding: 82px 0 !important;
+  }
+  .shift-up{
+    margin-top: -40px !important;
+  }
+  .scroll{
+    margin-top: 0 !important;
+  }
+}
