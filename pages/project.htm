@@ -1,19 +1,32 @@
-title = "Project"
-url = "/project"
+title = "Project Details"
+url = "/project/:slug"
 layout = "default"
 is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
+
+[builderDetails projectDetails]
+modelClass = "Enok\FeaturedProjects\Models\Project"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Oops! Project was not found"
 ==
+{% set record = projectDetails.record %}
+{% set displayColumn = projectDetails.displayColumn %}
+{% set notFoundMessage = projectDetails.notFoundMessage %}
 
 
 {% partial "navigation-menu" %}
 
 
-<div class="jumbotron jumbotron-fluid dark shift-up">
+<div class="jumbotron jumbotron-fluid dark shift-up" style="background-image: url('{{ record.image | media }}'); opacity:0.5;">
     <div class="container text-xs-center">
-        <h1 class="display-3">Project Title</h1>
-        <p class="lead">This is a high-level view of my core skills</p>
+        {% if record %}
+        <h1 class="display-3">{{record.title}}</h1>
+        {% else %}
+        <h1 class="display-5">{{ notFoundMessage }}</h1>
+        {% endif %}
     </div>
 </div>
 
@@ -21,23 +34,20 @@ robot_follow = "follow"
 <section class="container-fluid bg--gray">
 
         <div class="container content--container">
-            <p class="introduction">
-                There was about to be a monumental change in the Gold industry. I was brought on to clean up their Identity and bring a world class look to a world class company.
-            </p>
+
+            {% if record %}
+            <p class="introduction">{{record.description}}</p>
 
             <div class="row">
 
                 <div class="col-md-4 content--info">
-                    <h6>Client Info</h6>
-                    <p>Anthem Vault, leaders in the Gold Industry and Economics.</p>
+                    <h6>Project Info</h6>
+                    <!--<b>Client: {{record.client_name}}</b>-->
+                    <p>{{record.client_description}}</p>
                     <h6>My Roles</h6>
-                    <ul class="content--tools">
-                        <li>Research</li>
-                        <li>UX / Wireframes</li>
-                        <li>Brand Style Guides</li>
-                        <li>Front-End Development</li>
-                        <li>Iconography & Illustrations</li>
-                    </ul>
+                    <div class="content--tools">
+                        {{record.tools | raw }}
+                    </div>
                     <a href="#" class="btn btn-sm btn-primary-outline round">
                     <i class="fa fa-share-alt"></i>
                         Share this project
@@ -45,31 +55,25 @@ robot_follow = "follow"
                 </div>
                 <div class="col-md-8 content--about">
                     <h5 class="content--title">The Challenge</h5>
-                    <p>
-                        I begin most projects by gathering as much information possible. Interview stakeholders to uncover business goals and figure out how I’ll measure success. This allows me to grasp a solid understanding of the problems that need to be solved.
-                    </p>
-                    <p>
-                        If it’s an existing product, I’ll sometimes run analytics and run some user tests.
-                    </p>
+                    {{record.challenge}}
                     <h5 class="content--title">Getting To Work</h5>
-                    <p>
-                        Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
-                    </p>
+                    {{record.solution}}
                 </div>
             </div>
+
+            {% else %}
+            <div class="row text-xs-center">
+                <p class="col-xs-12">{{ notFoundMessage }}</p>
+            </div>
+            {% endif %}
         </div>
 </section> <!-- /container -->
 
 <section class="container">
     <div class="row cms-editable">
         <div class="col-xs-12">
-            <h2>This is a text Title H2</h2>
-            <h3>This is a text Title H3</h3>
-            <p>This is some copy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias dolore mollitia nobis quis rerum saepe? Cum, distinctio dolores impedit labore laboriosam nemo nihil nulla possimus praesentium tempora ut vero!</p>
-            <img class="img-fluid" src="http://john-ellison.com/images/thengine-brainstorm-3.jpg" alt="">
-            <h5>This is a text Title H5</h5>
-            <p>This is some copy. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias dolore mollitia nobis quis rerum saepe? Cum, distinctio dolores impedit labore laboriosam nemo nihil nulla possimus praesentium tempora ut vero!</p>
-            <img class="img-fluid" src="http://john-ellison.com/images/thengine-brainstorm-3.jpg" alt="">
+            {{record.content | raw}}
+
         </div>
     </div>
 </section>
@@ -82,9 +86,3 @@ robot_follow = "follow"
         <span>Next Project</span> <i class="icon icon-arrow-right"></i>
     </a>
 </div>
-
-
-
-
-
-

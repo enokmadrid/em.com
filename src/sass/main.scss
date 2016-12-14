@@ -236,13 +236,14 @@
   h4,h5{ font-weight: 600; }
   .content--step-subtext{ color: $brand-primary; }
   .content--icon{
-    font-size: 5rem;
+    font-size: 7rem;
     text-align: center;
     display: block;
-    padding-top: 40px;
-    padding-right: 25%;
+    //padding-top: 40px;
+    opacity:0.2;
+    //padding-right: 25%;
   }
-  .content--tools{
+  .content--tools, .content--tools ul{
     margin-top: 20px;
     padding-left: 10px;
     color: $gray-light;
