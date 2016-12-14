@@ -19,9 +19,13 @@
       margin-top: 60px;
     }
     .scroll{
-      display: block;
-      margin-top: 140px;
+      margin-top: 0 !important;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 5%;
       text-align: center;
+
       i{
         font-size: 36px;
         color: white;
@@ -337,6 +341,7 @@
     width: 500px;
     text-align: center;
   }
+
 }
 
 
