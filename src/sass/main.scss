@@ -294,8 +294,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  //background-color: rgb(0,0,0);
-  background-color: rgba($brand-black-light, 0.95);
+  background-color: rgba($brand-black, 0.97);
   overflow-y: hidden;
   transition: 0.5s;
   a {
@@ -315,14 +314,29 @@
     right: 45px;
     font-size: 60px;
   }
+  .form-group{
+    input, textarea{
+      background: $brand-black-light;
+      color: snow;
+      border: none;
+      width: 100%;
+      border-radius: 40px;
+      padding: 15px 25px;
+    }
+    textarea{ height: 170px;}
+  }
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 15%;
   width: 100%;
-  text-align: center;
-  margin-top: 30px;
+  h4{ color: white; }
+  form{
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+  }
 }
 
 
