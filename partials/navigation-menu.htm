@@ -1,20 +1,19 @@
 ==
-<nav class="flexbox-container hidden-sm-down">
+<nav class="flexbox-container">
     <div class="box logo">
         <div>
             <img src="{{ 'assets/images/em-logo.svg' | theme }}" alt="Enok Madrid Logo" height="46" width="46">
         </div>
     </div>
-    <div class="box navigation">
+    <div class="box navigation hidden-sm-down">
         <ul class="list-inline">
-            <li><a href="">Work</a></li>
+            <li><a href="{{ 'work'|page }}">Work</a></li>
             <li><a href="{{ 'process-discovery'|page }}">Process</a></li>
             <li><a href="">About</a></li>
         </ul>
     </div>
-    <div class="box">
+    <div class="box hidden-sm-down">
         <div>
-
             <a href="javascript:void(0)" onclick="openNav()" class="btn btn-primary-outline round btn-sm">
                 Message me
             </a>
