@@ -8,7 +8,19 @@
   align-items: stretch;
   align-content: center;
   flex-wrap: wrap;
+
   &.mobile-menu{
+    &.process{
+      overflow: auto;
+      justify-content: space-between;
+      width:100%;
+      flex-wrap: nowrap;
+      .flex-link{
+        padding: 0 5px;
+        i{ padding:0 25px; white-space: nowrap; }
+      }
+    }
+
     height: 10vmax;
     .flex-link{
       background: $brand-black-light;
