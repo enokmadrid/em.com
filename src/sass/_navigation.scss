@@ -3,10 +3,20 @@
 */
 .flexbox-container{
   display: flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
   align-content: center;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   &.mobile-menu{
@@ -14,14 +24,18 @@
       overflow: auto;
       justify-content: space-between;
       width:100%;
+
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+
       .flex-link{
         padding: 0 5px;
         i{ padding:0 25px; white-space: nowrap; }
       }
     }
 
-    height: 10vmax;
+    height: 150px;
     .flex-link{
       background: $brand-black-light;
       color: #8787A0;
@@ -37,6 +51,7 @@
       }
     }
     i{
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       font-size: 28px;
       span{
@@ -69,24 +84,41 @@
     }
   }
   .flex-link{
+    display:-webkit-flex;
+    display:-ms-flexbox;
     display: flex;
+
     text-align: center;
     align-items: center;
     justify-content: center;
-    flex: 1;
+
+    -webkit-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
     &:hover{
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
     }
-    &.flex-text-left{ justify-content: flex-start; }
-    &.flex-text-right{ justify-content: flex-end; }
+    &.flex-text-left{
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+    &.flex-text-right{
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
     &:focus{
       text-decoration: none;
     }
   }
 
   &.content--menu{
-    height: 10vmax;
+    height: 100px;
     .flex-link{
       background: white;
       &:hover{
@@ -108,6 +140,7 @@
       font-family: $font-family-sans-serif;
     }
     i{
+      -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       font-size: 28px;
 
@@ -119,15 +152,27 @@
 
     width: 40px;
     height: 100px;
+
+    -webkit-box-flex:1;
+    -ms-flex:1;
     flex:1;
+
     align-items: center;
     justify-content: center;
   }
   .box:first-child,
   .box:last-child{
+
+    -webkit-box-flex:1;
+    -ms-flex:1;
     flex:1;
+
     div{
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
       display: flex;
+
       height: inherit;
       align-items: center;
       justify-content: center;
@@ -138,14 +183,24 @@
     }
   }
   .box.navigation{
+    -webkit-box-flex:4;
+    -ms-flex:4;
     flex:4;
 
     ul{
+      display:-webkit-box;
+      display:-webkit-flex;
+      display:-ms-flexbox;
       display: flex;
+
       height: inherit;
       justify-content: center;
       li{
+        display:-webkit-box;
+        display:-webkit-flex;
+        display:-ms-flexbox;
         display: flex;
+
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -155,6 +210,7 @@
         a{
           color: #fff;
           &:hover{
+            -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
             color: $brand-primary;
             text-decoration: none;

@@ -16,6 +16,6 @@
   ],
   "dependencies": {
     "fontawesome": "4.7.0",
-    "jQuery": "~2.1.4"
+    "jQuery": "latest"
   }
 }

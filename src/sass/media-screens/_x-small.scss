@@ -2,16 +2,31 @@
 @media (max-width: 543px) {
   // mobile menu with smaller icons
   .flexbox-container.mobile-menu{
-    height: 85px;
+    height: 65px;
+    display: -webkit-box;
+    &.process{
+      display: flex;
+    }
     i{
-      &:before{font-size: 28px;}
+      &:before{font-size: 20px;}
       span{
-        font-size: 12px;
         padding-top: 0;
+        margin-top:-15px;
+        font-size: 11px;
+        font-weight: 400;
         font-style: normal;
-        margin-top:-5px;
+
       }
     }
+  }
+
+  .flexbox-container.content--menu{
+    height: 65px;
+    .btn{
+      font-size: 0.9rem;
+      padding: 0;
+    }
+    .icon{ font-size: 1rem; }
   }
 
   // display text
@@ -46,22 +61,25 @@
 
   }
 
-  #about{
-    .gravatar{ height: 100px; width:100px;}
+  #about {
+    .gravatar {
+      height: 100px;
+      width:100px;
+    }
   }
 
-  .display-4{ font-size: 2rem; }
+  .display-4 { font-size: 2rem; }
   p{
     font-size: 16px !important;
     line-height: 1.4rem !important;
   }
-  .section-subtitle{
+  .section-subtitle {
     padding: 0 20px;
   }
 
-  h4{ font-size: 1.4rem; }
+  h4 { font-size: 1.4rem; }
 
-  .project--fullwidth{ padding: 80px 0 !important; }
+  .project--fullwidth { padding: 80px 0 !important; }
   .project--image,
   .project--description,
   .project-text
@@ -79,19 +97,23 @@
     margin-bottom: 40px;
   }
 
-  #about{
+  #about {
     padding: 40px 0;
   }
-  .footer-page{ padding-top: 40px; }
+  .footer-page { padding-top: 40px; }
 
   .footer-page .btn-lg {
     margin-top: 20px;
     margin-bottom: 40px;
   }
-  .footer--row{
-    div{ padding: 10px 0 !important; }
-    .flex-link{
+  .footer--row {
+    padding-bottom: 60px;
+    div { padding: 10px 0 !important; }
+    .flex-link {
       display: block;
+
+      -webkit-flex: initial;
+      -ms-flex: initial;
       flex: initial;
       small{
         display:block;

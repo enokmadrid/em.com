@@ -69,10 +69,11 @@
 #what-i-do{
   background: white;
   padding: 100px 0;
+  .flex{
+    flex: 1;
+  }
   .card{
     padding: 25px;
-    margin: 10px;
-    flex: 1;
     img{
       width: 150px;
       height: 150px;
@@ -112,6 +113,8 @@
     color: white;
     &:hover{ text-decoration: none; }
     h4{
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       align-items: center;
       margin: 0;
@@ -203,7 +206,13 @@
 
 // OTHER CSS FLOATING DIC IMAGE
 .project--image-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   img{
     display: block;
@@ -345,7 +354,11 @@
 
 }
 
-
+#success-message {
+  margin: 0 auto;
+  width: 500px;
+  display: none;
+}
 
 
 @media screen and (max-height: 450px) {
