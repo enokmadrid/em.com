@@ -19,7 +19,7 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
 
 
 //GRADIENT
-.brand-gradient{
+.brand-gradient {
   background: $brand-secondary; /* Old browsers */
   background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
@@ -27,7 +27,7 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
   border: none;
 
-  &.btn:hover{
+  &.btn:hover {
     background: $brand-secondary; /* Old browsers */
     background: -moz-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */

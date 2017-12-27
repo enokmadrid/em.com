@@ -18,38 +18,50 @@ notFoundMessage = "Oops! Project was not found"
 {% partial "navigation-menu" %}
 
 
-<div class="jumbotron jumbotron-fluid dark shift-up" style="background-image: url('{{ record.image | media }}'); opacity:0.5;">
+<div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ record.hero_image | media }}');">
     <div class="container text-xs-center">
         {% if record %}
         <h1 class="display-3">{{record.title}}</h1>
+        <img class="img-fluid featured-image" src="{{ record.featured_image | media }}" alt="">
         {% else %}
         <h1 class="display-5">{{ notFoundMessage }}</h1>
         {% endif %}
     </div>
 </div>
 
-
 <section class="container-fluid bg--gray">
+    <p class="container introduction hidden-md-down">{{record.description}}</p>
+</section>
 
-        <div class="container content--container">
+<section class="container-fluid">
+
+        <div class="container">
 
             {% if record %}
-            <p class="introduction">{{record.description}}</p>
 
-            <div class="row">
+            <div class="row content--container">
 
-                <div class="col-md-4 content--info">
-                    <h6>Project Info</h6>
-                    <!--<b>Client: {{record.client_name}}</b>-->
-                    <p>{{record.client_description}}</p>
-                    <h6>My Roles</h6>
-                    <div class="content--tools">
-                        {{record.tools | raw }}
+                <div class="col-md-4 content--summary">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12">
+                            <span class="content--step-subtext">My Roles</span>
+                            <div class="content--tools m-b-lg">
+                                {{record.roles | raw }}
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-12">
+                            <span class="content--step-subtext">Technologies</span>
+                            <div class="content--tools">
+                                {{record.tools | raw }}
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="#" class="btn btn-sm btn-primary-outline round">
+                                <i class="fa fa-share-alt"></i>
+                                Share this project
+                            </a>
+                        </div>
                     </div>
-                    <a href="#" class="btn btn-sm btn-primary-outline round">
-                    <i class="fa fa-share-alt"></i>
-                        Share this project
-                    </a>
                 </div>
                 <div class="col-md-8 content--about">
                     <h5 class="content--title">The Challenge</h5>
@@ -65,19 +77,21 @@ notFoundMessage = "Oops! Project was not found"
             </div>
             {% endif %}
         </div>
-</section> <!-- /container -->
+</section>
 
-<section class="container">
-    <div class="row cms-editable">
-        <div class="col-xs-12">
-            {{record.content | raw}}
+<section class="container-fluid cms-editable">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                {{record.content | raw}}
 
+            </div>
         </div>
     </div>
 </section>
 
 <div class="flexbox-container content--menu">
-    <a href="#" class="flex-link btn">
+    <a href="#" class="flex-link">
         <i class="icon icon-arrow-left"></i><span>Previous Project</span>
     </a>
     <a href="#" class="flex-link">
