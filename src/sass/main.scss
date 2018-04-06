@@ -1,24 +1,34 @@
+@import "bootstrap";
 @import 'mixins.scss';
 @import "brand-colors";
 @import "navigation";
 @import "typography";
 @import "buttons";
 
-
-.jumbotron-fluid{
+.jumbotron-fluid {
   margin:0;
   padding: 220px 0 60px;
-  &.dark{
+
+  &.dark {
     background-color: $brand-black;
+
     h1,h2,h3,h4,h5,h6,p,a{
       color: white;
     }
-    &.shift-up { margin-top: -100px; }
-    .lead{ margin-top: 20px; }
+
+    &.shift-up {
+      margin-top: -100px;
+    }
+
+    .lead {
+      margin-top: 20px;
+    }
+
     .btn {
       margin-top: 60px;
     }
-    .scroll{
+
+    .scroll {
       margin-top: 0 !important;
       position: absolute;
       right: 0;
@@ -26,14 +36,15 @@
       bottom: 5%;
       text-align: center;
 
-      i{
+      i {
         font-size: 36px;
         color: white;
         opacity: 0.3;
       }
     }
   }
-  &.hero{
+
+  &.hero {
     background-image: url("../images/hero.png");
     background-position: center top;
     background-repeat: no-repeat;
@@ -43,21 +54,24 @@
 
 
 // ********* ABOUT *********
-#about{
+#about {
   background: #f7f7f9;
   padding: 100px 0;
-  .copy-intro{
+
+  .copy-intro {
     margin-top: 10px;
-    .c-primary{
+
+    .c-primary {
       color: $brand-primary;
     }
   }
-  .copy-about{
+
+  .copy-about {
     margin-top: 40px;
   }
 }
 
-.gravatar{
+.gravatar {
   border-radius: 50%;
   opacity: 0.7;
   height:140px;
@@ -66,24 +80,28 @@
 }
 
 // ********* WHAT I DO *********
-#what-i-do{
+#what-i-do {
   background: white;
   padding: 100px 0;
-  .flex{
+
+  .flex {
     flex: 1;
   }
-  .card{
+  .card {
     padding: 25px;
-    img{
+
+    img {
       width: 150px;
       height: 150px;
       margin: 30px 0;
     }
-    .card-subtitle, p{
+
+    .card-subtitle, p {
       text-align: center;
       display: block;
     }
-    .card-subtitle{
+
+    .card-subtitle {
       font-size: 24px;
       font-weight: 600;
       padding-bottom: 15px;
@@ -92,33 +110,39 @@
   }
 
 }
-.section-title{
+.section-title {
   width: 100%;
   display: block;
   margin-bottom: 40px;
-  h1,h2,h3,h4,h5,h6,p{
+
+  h1,h2,h3,h4,h5,h6,p {
     text-align: center;
     display: block;
   }
-  .section-subtitle{
+
+  .section-subtitle {
     font-size: 22px;
   }
 }
 
 // ********* MY PROCESS *********
-#my-process{
-  
-  .flexbox-container{
+#my-process {
+  .flexbox-container {
     height: 260px;
     color: white;
-    &:hover{ text-decoration: none; }
-    h4{
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    h4 {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       align-items: center;
       margin: 0;
-      i{
+
+      i {
         opacity: 0.5;
         padding-left: 20px;
       }
@@ -127,23 +151,32 @@
 }
 
 //************ Section Subdivision *********
-.container-fluid{ padding: 0; margin: 0;}
-.section-subdivision{
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.section-subdivision {
   padding: 60px 0;
-  h4{ font-weight: 600; }
+
+  h4 {
+    font-weight: 600;
+  }
 }
 
 //*********** FEATURED PROJECT ***********
-.project--fullwidth{
+.project--fullwidth {
   background: #333;
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 200px 0;
-  h1, li, p, a{
+
+  h1, li, p, a {
     color: #fff;
   }
-  h1{
+
+  h1 {
     font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
     word-wrap: break-word;
     -webkit-hyphens: auto;
@@ -152,49 +185,73 @@
     -o-hyphens: auto;
     hyphens: auto;
   }
-  .project-title{
+
+  .project-title {
     font-weight: 600;
   }
-  .project-tags{
+
+  .project-tags {
     list-style: none;
     padding: 0;
     margin-top: 20px;
     margin-bottom: 40px;
-    li{
+
+    li {
       display: inline;
       font-size: 13px;
-      &:not(:first-child){
+
+      &:not(:first-child) {
         padding-left: 4px;
-        &::before{ content: "-"; padding-right: 8px; }
+
+        &::before {
+          content: "-";
+          padding-right: 8px;
+        }
       }
     }
   }
-  .project-text{
+
+  .project-text {
     margin-bottom: 35px;
   }
 }
 
-.project--description{
+.project--description {
 }
+
 .project--image {
 }
 
-.footer-page{
-    margin:0;
-    padding: 150px 0 0;
-    &.dark{
-      background: $brand-black;
-    }
-    .btn-lg{ margin-bottom: 100px; }
-    .footer--row{
-      background: rgba(0,0,0,.2);
-      small:not(i){ color: #8787A0; }
-      i{ color: $brand-primary; }
-      div{ padding: 20px 40px; }
+.footer-page {
+  margin:0;
+  padding: 150px 0 0;
+
+  &.dark {
+    background: $brand-black;
+  }
+
+  .btn-lg {
+    margin-bottom: 100px;
+  }
+
+  .footer--row {
+    background: rgba(0,0,0,.2);
+
+    small:not(i) {
+      color: #8787A0;
     }
 
+    i {
+      color: $brand-primary;
+    }
+
+    div {
+      padding: 20px 40px;
+    }
+  }
+
   .flex-link {
-    li{
+    li {
       display: inline-flex;
       align-items: center;
       padding-left: 20px;
@@ -204,8 +261,8 @@
 
 
 
-// OTHER CSS FLOATING DIC IMAGE
-.project--image-container{
+// OTHER CSS FLOATING IMAGE
+.project--image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,11 +271,13 @@
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  img{
+
+  img {
     display: block;
     width: 100%;
   }
 }
+
 .project--ablv {
   margin-top: -100px;
   margin-bottom: -200px;
@@ -230,42 +289,56 @@
 }
 
 //************ Icon Fonts *********
-
-.mobile-menu{
-  .icon{
-    &:before{ font-size: 40px; }
+.mobile-menu {
+  .icon {
+    &:before {
+      font-size: 40px;
+    }
   }
 }
 
 
 //********* PROCESS STEPS *********
-.bg--gray{
+.bg--gray {
   background: #F9F9F9;
 }
-.content--container{
-  h3, .content--step-title{
+
+.content--container {
+  h3, .content--step-title {
     font-weight: 700;
-    small{ text-transform: uppercase;}
+
+    small {
+      text-transform: uppercase;
+    }
   }
-  h4,h5{ font-weight: 600; }
-  .content--step-subtext{ color: $brand-primary; }
-  .content--icon{
+
+  h4,h5 {
+    font-weight: 600;
+  }
+
+  .content--step-subtext {
+    color: $brand-primary;
+  }
+
+  .content--icon {
     font-size: 7rem;
     text-align: center;
     display: block;
-    //padding-top: 40px;
-    opacity:0.2;
-    //padding-right: 25%;
+    opacity: 0.2;
   }
-  .content--tools, .content--tools ul{
+
+  .content--tools,
+  .content--tools ul {
     margin-top: 20px;
     padding-left: 10px;
     color: $gray-light;
     font-size: 0.85rem;
+
     li {
       list-style: none;
       line-height: 32px;
     }
+
     li:before {
       content:"·";
       font-size:45px;
@@ -273,7 +346,8 @@
       margin-right: 15px;
     }
   }
-  .content--images{
+
+  .content--images {
     margin-top: 40px;
   }
 }
@@ -298,30 +372,36 @@
 .featured-image {
   margin: 60px auto 0;
 }
+
 .content--summary {
   padding-bottom: 40px;
 }
+
 .content--container,
 .cms-editable {
   padding: 64px 0;
 }
+
 .content--title {
   font-weight: 600;
+
   &:not(:first-child) {
     margin-top: 50px;
   }
 }
+
 .cms-editable {
   display: block;
   text-align: center;
-  img{
+
+  img {
     margin: 0 auto; padding-bottom: 40px;
   }
+
   h1,h2,h3,h4,h5,h6,p {
     padding-bottom: 20px;
   }
 }
-
 
 .overlay {
   height: 0%;
@@ -333,6 +413,7 @@
   background-color: rgba($brand-black, 0.97);
   overflow-y: hidden;
   transition: 0.5s;
+
   a {
     padding: 8px;
     text-decoration: none;
@@ -341,17 +422,21 @@
     display: block;
     transition: 0.3s;
   }
-  a:hover, a:focus {
+
+  a:hover,
+  a:focus {
     color: #f1f1f1;
   }
+
   .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
   }
-  .form-group{
-    input, textarea{
+
+  .form-group {
+    input, textarea {
       background: $brand-black-light;
       color: snow;
       border: none;
@@ -359,7 +444,10 @@
       border-radius: 40px;
       padding: 15px 25px;
     }
-    textarea{ height: 170px;}
+
+    textarea {
+      height: 170px;
+    }
   }
 }
 
@@ -367,13 +455,14 @@
   position: relative;
   top: 15%;
   width: 100%;
-  h4{ color: white; }
-  form{
+  h4 {
+    color: white;
+  }
+  form {
     margin: 0 auto;
     width: 500px;
     text-align: center;
   }
-
 }
 
 #success-message {
@@ -384,14 +473,19 @@
 
 
 @media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
   }
 }
-
 
 @import "media-queries";

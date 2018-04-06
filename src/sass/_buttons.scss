@@ -1,51 +1,37 @@
-//Buttons
-.btn{
-  transition: all 0.5s ease;
-  &:hover, &:active, &:focus{ transition: all 0.5s ease; }
+.brand-gradient {
+  background: #AD1C61;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  border: none; }
+  .brand-gradient.btn:hover {
+    background: #AD1C61;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
 
-  &.round{
-    border-radius: 30px;
-    border-width: 2px;
-  }
+.c-primary {
+  color: #E30153;
 }
-.btn-lg{
-  font-size: 1.1rem;
-  &.round {
-    border-radius: 34px;
-  }
-}
-.btn-sm{
-  &.round {
-    border-radius: 22px;
+
+.btn {
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,.2), 0 1px 8px rgba(0,0,0,0.2);
   }
 }
 
-.dark{
-  .btn{
-    &.btn-primary-outline{
-      color: $brand-primary;
-      &:hover, &:active, &:focus{ color: white; }
-    }
-    &.btn-secondary-outline{
-      color: white;
-      border-color: white;
-      &:hover, &:active, &:focus{ color: #000000; background: white; }
-    }
-    &.btn-success-outline{
-      color: $brand-success;
-      &:hover, &:active, &:focus{ color: white; }
-    }
-    &.btn-info-outline{
-      color: $brand-info;
-      &:hover, &:active, &:focus{ color: white; }
-    }
-    &.btn-warning-outline{
-      color: $brand-warning;
-      &:hover, &:active, &:focus{ color: white; }
-    }
-    &.btn-danger-outline{
-      color: $brand-danger;
-      &:hover, &:active, &:focus{ color: white; }
-    }
-  }
-}
+/*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3JjL3Nhc3MvX2J1dHRvbnMuc2NzcyIsCgkic291cmNlcyI6IFsKCQkic3JjL3Nhc3MvX2JyYW5kLWNvbG9ycy5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBcUJBLEFBQUEsZUFBZSxDQUFDO0VBQ2QsVUFBVSxFQXBCZ0IsT0FBTztFQW9CSCxrQkFBa0I7RUFDaEQsVUFBVSxFQUFFLHFEQUFxRTtFQUFFLGNBQWM7RUFDakcsVUFBVSxFQUFFLHdEQUF1RTtFQUFFLDZCQUE2QjtFQUNsSCxVQUFVLEVBQUUsZ0RBQStEO0VBQUUsc0RBQXNEO0VBQ25JLE1BQU0sRUFBRSwySEFBMkg7RUFBRSwyQ0FBMkM7RUFDaEwsTUFBTSxFQUFFLElBQUksR0FTYjtFQWZELEFBUUUsZUFSYSxBQVFaLElBQUksQUFBQSxNQUFNLENBQUM7SUFDVixVQUFVLEVBNUJjLE9BQU87SUE0QkQsa0JBQWtCO0lBQ2hELFVBQVUsRUFBRSxzREFBc0U7SUFBRSxjQUFjO0lBQ2xHLFVBQVUsRUFBRSx5REFBd0U7SUFBRSw2QkFBNkI7SUFDbkgsVUFBVSxFQUFFLGlEQUFnRTtJQUFFLHNEQUFzRDtJQUNwSSxNQUFNLEVBQUUsMkhBQTJIO0lBQUUsMkNBQTJDLEVBQ2pMOztBQUdILEFBQUEsVUFBVSxDQUFBO0VBQ1IsS0FBSyxFQXRDcUIsT0FBTyxHQXVDbEMiCn0= */

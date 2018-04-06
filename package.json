@@ -1,34 +1,28 @@
 {
-  "name": "emils-exemplary-october-cms-boilerplate",
+  "name": "npm-scripts",
   "version": "1.0.0",
-  "description": "A basic front end web boilerplate aimed at rapid set up for October CMS web projects.",
-  "main": "gulpfile.js",
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-bower": "0.0.13",
-    "gulp-concat": "^2.6.0",
-    "gulp-concat-css": "^2.2.0",
-    "gulp-minify-css": "^1.2.0",
-    "gulp-notify": "^2.2.0",
-    "gulp-order": "^1.1.1",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^2.0.0",
-    "main-bower-files": "^2.9.0",
-    "orchestrator": "^0.3.7",
-    "run-sequence": "^1.1.2"
+  "description": "",
+  "main": "index.js",
+  "config": {
+    "srcPath": "./src/sass/main.scss",
+    "assetsPath": "./assets/css/",
+    "proxyURI": "october.test",
+    "tunnel": "october"
   },
   "scripts": {
+    "compile:sass": "node-sass $npm_package_config_srcPath  --output $npm_package_config_assetsPath --source-map-embed --output-style-compressed",
+    "watch:sass": "onchange $npm_package_config_srcPath -- run-s compile:sass ",
+    "browsersync": "browser-sync start --proxy $npm_package_config_proxyURI --tunnel $npm_package_config_tunnel --files $npm_package_config_assetsPath",
+    "watch": "run-p browsersync watch:sass",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://ChewyJetpack@bitbucket.org/ChewyJetpack/emils-nuke-proof-intergalactic-boilerplate.git"
-  },
-  "author": "Emil Smith",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/ChewyJetpack/emils-nuke-proof-intergalactic-boilerplate#readme",
-  "dependencies": {
-    "uglify-js": "^2.7.0"
+  "keywords": [],
+  "author": "Ben Weiser <bweiser86@gmail.com> (http://benweiser.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "node-sass": "*",
+    "npm-run-all": "^4.1.1",
+    "onchange": "^3.2.1"
   }
 }
