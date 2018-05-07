@@ -1,29 +1,30 @@
+
 .brand-gradient {
-  background: #AD1C61;
+  background: $brand-secondary;
   /* Old browsers */
-  background: -moz-linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  background: -webkit-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #AD1C61 0%, #E30153 100%);
+  background: linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
   border: none; }
   .brand-gradient.btn:hover {
-    background: #AD1C61;
+    background: $brand-secondary;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    background: -moz-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    background: -webkit-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-45deg, #AD1C61 0%, #E30153 100%);
+    background: linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
 
 .c-primary {
-  color: #E30153;
+  color: $brand-primary;
 }
 
 .btn {
@@ -32,6 +33,17 @@
   &:hover {
     box-shadow: 0 4px 20px rgba(0,0,0,.2), 0 1px 8px rgba(0,0,0,0.2);
   }
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+}
+
+.btn-secondary {
+  color: $brand-black;
 }
 
 /*# sourceMappingURL=data:application/json;base64,ewoJInZlcnNpb24iOiAzLAoJImZpbGUiOiAic3JjL3Nhc3MvX2J1dHRvbnMuc2NzcyIsCgkic291cmNlcyI6IFsKCQkic3JjL3Nhc3MvX2JyYW5kLWNvbG9ycy5zY3NzIgoJXSwKCSJuYW1lcyI6IFtdLAoJIm1hcHBpbmdzIjogIkFBcUJBLEFBQUEsZUFBZSxDQUFDO0VBQ2QsVUFBVSxFQXBCZ0IsT0FBTztFQW9CSCxrQkFBa0I7RUFDaEQsVUFBVSxFQUFFLHFEQUFxRTtFQUFFLGNBQWM7RUFDakcsVUFBVSxFQUFFLHdEQUF1RTtFQUFFLDZCQUE2QjtFQUNsSCxVQUFVLEVBQUUsZ0RBQStEO0VBQUUsc0RBQXNEO0VBQ25JLE1BQU0sRUFBRSwySEFBMkg7RUFBRSwyQ0FBMkM7RUFDaEwsTUFBTSxFQUFFLElBQUksR0FTYjtFQWZELEFBUUUsZUFSYSxBQVFaLElBQUksQUFBQSxNQUFNLENBQUM7SUFDVixVQUFVLEVBNUJjLE9BQU87SUE0QkQsa0JBQWtCO0lBQ2hELFVBQVUsRUFBRSxzREFBc0U7SUFBRSxjQUFjO0lBQ2xHLFVBQVUsRUFBRSx5REFBd0U7SUFBRSw2QkFBNkI7SUFDbkgsVUFBVSxFQUFFLGlEQUFnRTtJQUFFLHNEQUFzRDtJQUNwSSxNQUFNLEVBQUUsMkhBQTJIO0lBQUUsMkNBQTJDLEVBQ2pMOztBQUdILEFBQUEsVUFBVSxDQUFBO0VBQ1IsS0FBSyxFQXRDcUIsT0FBTyxHQXVDbEMiCn0= */

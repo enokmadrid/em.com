@@ -1,8 +1,9 @@
 // BRAND COLORS
-$brand-primary:             #E30153;
-$brand-secondary:           #AD1C61;
-$brand-black:               #211E29;
+$brand-primary:             #8984FA;
+$brand-secondary:           #5952F9;
+$brand-black:               #101018;
 $brand-black-light:         lighten($brand-black, 10%);
+$brand-black-lighter:       #2E2E36;
 
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
@@ -18,8 +19,8 @@ $gray-lightest:             #f7f7f9;
 $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 
-//GRADIENT
-.brand-gradient {
+//BRAND GRADIENT PRIMARY
+.brand-gradient-primary {
   background: $brand-secondary; /* Old browsers */
   background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
@@ -36,6 +37,24 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
   }
 }
 
-.c-primary{
+//BRAND GRADIENT SECONDARY
+.brand-gradient-dark {
+  background: $brand-black; /* Old browsers */
+  background: -moz-linear-gradient(45deg, $brand-black 0%, $brand-black-light 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, $brand-black 0%, $brand-black-light 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, $brand-black 0%, $brand-black-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-black', endColorstr='$brand-black-light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: none;
+
+  &.btn:hover {
+    background: $brand-black; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $brand-black 0%, $brand-black-light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, $brand-black 0%, $brand-black-light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-45deg, $brand-black 0%, $brand-black-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-black', endColorstr='$brand-black-light',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+}
+
+.c-primary {
   color: $brand-primary;
 }
