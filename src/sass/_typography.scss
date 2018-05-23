@@ -13,6 +13,14 @@ body {
   }
 }
 
+// FORMAT PARAGRAPH WITH 75 CPL
+.format-paragraph p {
+  max-width: 79ch;
+  margin: 0 auto;
+}
+.format-paragraph img {
+  @extend .img-fluid;
+}
 
 
 // HEADERS

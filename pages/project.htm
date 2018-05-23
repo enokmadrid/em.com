@@ -10,7 +10,7 @@ modelKeyColumn = "slug"
 displayColumn = "title"
 notFoundMessage = "Oops! Project was not found"
 ==
-{% set record = projectDetails.record %}
+{% set project = projectDetails.record %}
 {% set displayColumn = projectDetails.displayColumn %}
 {% set notFoundMessage = projectDetails.notFoundMessage %}
 
@@ -18,11 +18,11 @@ notFoundMessage = "Oops! Project was not found"
 {% partial "navigation-menu" %}
 
 
-<div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ record.hero_image | media }}');">
+<div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ project.hero_image | media }}');">
     <div class="container text-xs-center">
-        {% if record %}
-        <h1 class="display-3">{{record.title}}</h1>
-        <img class="img-fluid featured-image" src="{{ record.featured_image | media }}" alt="">
+        {% if project %}
+        <h1 class="display-3">{{project.title}}</h1>
+        <img class="img-fluid featured-image" src="{{ project.featured_image | media }}" alt="">
         {% else %}
         <h1 class="display-5">{{ notFoundMessage }}</h1>
         {% endif %}
@@ -30,14 +30,14 @@ notFoundMessage = "Oops! Project was not found"
 </div>
 
 <section class="container-fluid bg--gray">
-    <p class="container introduction hidden-md-down">{{record.description}}</p>
+    <p class="container introduction hidden-md-down">{{project.description}}</p>
 </section>
 
 <section class="container-fluid">
 
         <div class="container">
 
-            {% if record %}
+            {% if project %}
 
             <div class="row content--container">
 
@@ -46,13 +46,13 @@ notFoundMessage = "Oops! Project was not found"
                         <div class="col-md-6 col-lg-12">
                             <span class="content--step-subtext">My Roles</span>
                             <div class="content--tools m-b-lg">
-                                {{record.roles | raw }}
+                                {{project.roles | raw }}
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-12">
                             <span class="content--step-subtext">Technologies</span>
                             <div class="content--tools">
-                                {{record.tools | raw }}
+                                {{project.tools | raw }}
                             </div>
                         </div>
                         <div class="col-md-12 text-center">
@@ -65,9 +65,9 @@ notFoundMessage = "Oops! Project was not found"
                 </div>
                 <div class="col-md-8 content--about">
                     <h5 class="content--title">The Challenge</h5>
-                    {{record.challenge}}
+                    {{project.challenge}}
                     <h5 class="content--title">Getting To Work</h5>
-                    {{record.solution}}
+                    {{project.solution}}
                 </div>
             </div>
 
@@ -79,11 +79,11 @@ notFoundMessage = "Oops! Project was not found"
         </div>
 </section>
 
-<section class="container-fluid cms-editable">
+<section class="container-fluid cms-editable format-paragraph">
     <div class="container">
         <div class="row">
             <div class="col-xs-12">
-                {{record.content | raw}}
+                {{project.content | raw}}
 
             </div>
         </div>
