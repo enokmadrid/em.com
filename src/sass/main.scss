@@ -12,7 +12,7 @@
   &.dark {
     background-color: $brand-black;
 
-    h1,h2,h3,h4,h5,h6,p,a{
+    h1,h2,h3,h4,h5,h6,p,a:not(.btn){
       color: white;
     }
 
@@ -255,7 +255,10 @@
     }
 
     i {
-      color: $brand-primary;
+      color: lighten($brand-black-lighter, 20%);
+    }
+    .fa-heart {
+      color: $brand-danger;
     }
 
     div {

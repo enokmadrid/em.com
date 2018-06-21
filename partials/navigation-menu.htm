@@ -1,21 +1,25 @@
-<nav class="flexbox-container">
+==
+<nav class="flexbox-container {% if isDark %} dark {% endif %}">
     <div class="box logo">
         <div>
             <a href="{{ 'homepage'|page }}">
-                <img src="{{ 'assets/images/em-logo.svg' | theme }}" alt="Enok Madrid Logo" height="46" width="46">
+                <img src="{{ 'assets/images/em-logo.svg' | theme }}" alt="Enok Madrid Logo">
+                Enok Madrid
             </a>
         </div>
     </div>
-    <div class="box navigation hidden-sm-down">
+    <div class="box navigation hidden-sm-down {% if isDark %} dark {% endif %}">
         <ul class="list-inline">
-            <!--<li><a href="{{ 'work'|page }}">Work</a></li>-->
-            <!--<li><a href="{{ 'process-discovery'|page }}">Process</a></li>-->
+            <li><a href="{{ 'work'|page }}">Work</a></li>
+            <li><a href="{{ 'about'|page }}">About</a></li>
+            <li><a href="{{ 'process-discovery'|page }}">Process</a></li>
+            <li><a href="{{ 'learn'|page }}">Training</a></li>
         </ul>
     </div>
     <div class="box hidden-sm-down">
         <div>
-            <a href="javascript:void(0)" onclick="openNav()" class="btn btn-primary-outline round btn-sm">
-                Message me
+            <a href="javascript:void(0)" onclick="openNav()" class="btn btn-primary round btn-sm">
+                Hire me
             </a>
         </div>
     </div>

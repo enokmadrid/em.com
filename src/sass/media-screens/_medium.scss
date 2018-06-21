@@ -1,4 +1,9 @@
 // Medium devices (tablets, less than 992px)
 @media (min-width: 768px) and (max-width: 991px) {
-
+  .flexbox-container .box:first-child {
+    flex: 2;
+  }
+  .flexbox-container .navigation ul li {
+    margin: 0 15px;
+  }
 }

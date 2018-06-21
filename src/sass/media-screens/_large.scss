@@ -1,4 +1,6 @@
 // Large devices (desktops, less than 1200px)
 @media (min-width: 992px) and (max-width: 1199px) {
-
+  .flexbox-container .box:first-child {
+    flex: 2;
+  }
 }

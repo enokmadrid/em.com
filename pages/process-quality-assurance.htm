@@ -5,6 +5,13 @@ is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
 ==
+<?php
+function onStart()
+{
+    $this['isDark'] = true;
+}
+?>
+==
 
 {% partial "mobile-menu" %}
 

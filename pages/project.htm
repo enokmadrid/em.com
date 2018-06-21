@@ -21,6 +21,13 @@ detailsKeyColumn = "slug"
 detailsUrlParameter = "slug"
 pageNumber = "{{ :page }}"
 ==
+<?php
+function onStart()
+{
+    $this['isDark'] = true;
+}
+?>
+==
 {% set project = projectDetails.record %}
 {% set displayColumn = projectDetails.displayColumn %}
 {% set notFoundMessage = projectDetails.notFoundMessage %}

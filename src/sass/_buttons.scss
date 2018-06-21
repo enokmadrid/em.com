@@ -44,17 +44,26 @@
 
 .btn-secondary {
   color: $brand-black;
+  border: none;
 }
 
-.btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-secondary-outline {
+  &:hover, &:active, &:focus {
+    background: white;
+    color: $brand-secondary;
+  }
+}
+
+.hasArrow {
   &:after {
     content: "\65";
     font-family: "streamline-icons-font" !important;
     opacity: 0.5;
     position: relative;
-    top: 3px;
+    top: 4px;
     left: 8px;
+    line-height: 0.9;
     transition: all 0.15s ease-in-out;
   }
   &:hover {

@@ -4,6 +4,13 @@ layout = "default"
 description = "Learn Courses"
 is_hidden = 0
 ==
+<?php
+function onStart()
+{
+    $this['isDark'] = true;
+}
+?>
+==
 {% partial "mobile-menu" %}
 
 {% partial "navigation-menu" %}

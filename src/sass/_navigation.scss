@@ -1,11 +1,10 @@
 /*
 *** NAVIGATION FLEXBOX ***
 */
-.flexbox-container{
+.flexbox-container {
   display: flex;
   display:-webkit-flex;
   display:-ms-flexbox;
-
 
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -19,8 +18,10 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
-  &.mobile-menu{
-    &.process{
+  &.mobile-menu {
+    height: 150px;
+
+    &.process {
       overflow: auto;
       justify-content: space-between;
       width:100%;
@@ -29,32 +30,41 @@
       -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
 
-      .flex-link{
+      .flex-link {
         padding: 0 5px;
-        i{ padding:0 25px; white-space: nowrap; }
+
+        i {
+          padding:0 25px;
+          white-space: nowrap;
+        }
       }
     }
 
-    height: 150px;
-    .flex-link{
+    .flex-link {
       background: $brand-black-light;
       color: #8787A0;
-      &:hover{
+
+      &:hover {
         background: $brand-black;
         text-decoration: none;
-        i{ color: $brand-primary; }
+
+        i {
+          color: $brand-primary;
+        }
       }
-      &.active{
+
+      &.active {
         background: $brand-black;
         border-bottom: solid 6px $brand-primary;
         color: $brand-primary;
       }
     }
-    i{
+    i {
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       font-size: 28px;
-      span{
+
+      span {
         display: block;
         font-family: $font-family-sans-serif;
         font-size: 12px;
@@ -64,9 +74,10 @@
       }
     }
   }
-  &.flexbox-links{
+  &.flexbox-links {
     background-color: $brand-black;
-    .flex-link{
+
+    .flex-link {
       max-width: 550px;
       max-height: 550px;
       &:hover {
@@ -78,12 +89,14 @@
         -webkit-opacity: 30%;
         z-index: 2;
       }
-      &:focus{
+
+      &:focus {
         text-decoration: none;
       }
     }
   }
-  .flex-link{
+
+  .flex-link {
     display:-webkit-flex;
     display:-ms-flexbox;
     display: flex;
@@ -98,60 +111,73 @@
 
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    &:hover{
+
+    &:hover {
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
     }
-    &.flex-text-left{
+
+    &.flex-text-left {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start;
     }
-    &.flex-text-right{
+
+    &.flex-text-right {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
       justify-content: flex-end;
     }
-    &:focus{
+
+    &:focus {
       text-decoration: none;
     }
   }
 
   &.content--menu {
     border-top: 1px solid #f2f2f2;
+
     .flex-link {
       padding: 70px 0;
       background: white;
+
       &:hover {
         background: #f2f2f2;
         text-decoration: none;
-        i{ color: $brand-primary; }
+        i {
+          color: $brand-primary;
+        }
       }
-      &.active{
+      &.active {
         background: $brand-black;
         border-bottom: solid 6px $brand-primary;
         color: $brand-primary;
       }
-      &:focus{
+
+      &:focus {
         text-decoration: none;
       }
     }
+
     span, i {
       line-height: 0;
     }
-    span{
+
+    span {
       padding: 0 20px;
       font-family: $font-family-sans-serif;
       margin-top: 2px;
     }
-    i{
+
+    i {
       -webkit-transition: all 0.5s ease;
       transition: all 0.5s ease;
       font-size: 28px;
     }
   }
 
-  .box{
+  // LOGO CONTAINER
+  .box {
     list-style: none;
 
     width: 40px;
@@ -164,14 +190,15 @@
     align-items: center;
     justify-content: center;
   }
+
   .box:first-child,
-  .box:last-child{
+  .box:last-child {
 
     -webkit-box-flex:1;
     -ms-flex:1;
     flex:1;
 
-    div{
+    div {
       display:-webkit-box;
       display:-webkit-flex;
       display:-ms-flexbox;
@@ -180,29 +207,32 @@
       height: inherit;
       align-items: center;
       justify-content: center;
-      i{
-        color:white;
+
+      i {
+        color: white;
         font-size: 32px;
       }
     }
   }
-  .box.navigation{
-    -webkit-box-flex:4;
-    -ms-flex:4;
-    flex:4;
 
-    ul{
-      display:-webkit-box;
-      display:-webkit-flex;
-      display:-ms-flexbox;
+  .navigation {
+    -webkit-box-flex: 4;
+    -ms-flex: 4;
+    flex: 4;
+
+    ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
 
       height: inherit;
       justify-content: center;
-      li{
-        display:-webkit-box;
-        display:-webkit-flex;
-        display:-ms-flexbox;
+
+      li {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
 
         text-align: center;
@@ -211,15 +241,47 @@
         font-family: "proxima-nova";
         font-size: 20px;
         margin: 0 30px;
-        a{
-          color: #fff;
-          &:hover{
+
+        a {
+          color: $brand-black-light;
+
+          &:hover {
             -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
-            color: $brand-primary;
+            color: $brand-secondary;
             text-decoration: none;
           }
         }
+      }
+    }
+  }
+
+  .logo {
+    img {
+      width: 30px;
+      margin-right: 5px;
+    }
+    a {
+      color: $brand-black-light;
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 600;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Theme for Dark Backgrounds
+  &.dark {
+    .logo a {
+      color: #FFFFFF;
+    }
+
+    .navigation a {
+      color: #FFFFFF;
+      &:hover {
+        color: $brand-primary;
       }
     }
   }
