@@ -1,4 +1,6 @@
 // BRAND COLORS
+$brand-action-primary:      #FF1A55;
+$brand-action-secondary:    #BF0E66;
 $brand-primary:             #8984FA;
 $brand-secondary:           #5952F9;
 $brand-black:               #101018;
@@ -18,6 +20,23 @@ $gray-lightest:             #f7f7f9;
 
 $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
+//BRAND GRADIENT Action
+.brand-gradient-action {
+  background: $brand-action-secondary; /* Old browsers */
+  background: -moz-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-action-secondary', endColorstr='$brand-action-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: none;
+
+  &.btn:hover {
+    background: $brand-action-secondary; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-action-secondary', endColorstr='$brand-action-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  }
+}
 
 //BRAND GRADIENT PRIMARY
 .brand-gradient-primary {

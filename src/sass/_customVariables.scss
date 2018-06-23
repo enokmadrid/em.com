@@ -34,6 +34,8 @@ $gray-light:                #818a91 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
+$brand-action-primary:      #FF1A55 !default;
+$brand-action-secondary:    #BF0E66 !default;
 $brand-primary:             #5952F9 !default;
 $brand-secondary:           #8984FA !default;
 $brand-success:             #5cb85c !default;
@@ -154,7 +156,7 @@ $font-family-base:           $font-family-sans-serif !default;
 $font-size-root:             18px !default;
 
 $font-size-base:             1rem !default;
-$font-size-lg:               1.25rem !default;
+$font-size-lg:               1.1rem !default;
 $font-size-sm:               .875rem !default;
 $font-size-xs:               .75rem !default;
 
@@ -211,9 +213,9 @@ $list-inline-padding:         5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          1.5rem !default;
+$border-radius-lg:       2rem !default;
+$border-radius-sm:       1rem !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -245,6 +247,10 @@ $table-border-color:            $gray-lighter !default;
 $btn-padding-x:                  1.5rem !default;
 $btn-padding-y:                  .375rem !default;
 $btn-font-weight:                normal !default;
+
+$btn-action-color:              #fff !default;
+$btn-action-bg:                 $brand-action-primary !default;
+$btn-action-border:             $btn-action-bg !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;

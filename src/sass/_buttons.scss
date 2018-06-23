@@ -1,37 +1,14 @@
 
-.brand-gradient {
-  background: $brand-secondary;
-  /* Old browsers */
-  background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  border: none; }
-  .brand-gradient.btn:hover {
-    background: $brand-secondary;
-    /* Old browsers */
-    background: -moz-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-45deg, $brand-secondary 0%, $brand-primary 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-secondary', endColorstr='$brand-primary',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */ }
-
 .c-primary {
   color: $brand-primary;
 }
 
-.btn {
+.btn:not(.btn-link){
   transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 20px rgba(0,0,0,.1), 0 1px 6px rgba(0,0,0,0.2);
 
   &:hover {
-    box-shadow: 0 4px 20px rgba(0,0,0,.2), 0 1px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 40px rgba(0,0,0,.3), 0 2px 10px rgba(0,0,0,0.2);
   }
 }
 
