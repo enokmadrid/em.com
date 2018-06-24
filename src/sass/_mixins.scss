@@ -19,8 +19,37 @@
 /*======================================
 =         INVERSE DARK COLORS          =
 ======================================*/
-.container--inverse{
-  h1,h2,h3,h4,h5,h6,p,b,span,li{
+.container--inverse {
+  h1,h2,h3,h4,h5,h6,p,b,span,li {
     color: #fff;
   }
+}
+
+.box-shadow {
+  box-shadow: 0 4px 20px rgba(0,0,0,.2), 0 1px 6px rgba(0,0,0,0.1);
+}
+
+.page-box {
+  @extend .box-shadow;
+  background: #FFFFFF;
+  padding: 60px 0;
+  border-radius: 4px;
+}
+.offset-top {
+  position: relative;
+  top: -270px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-t-sm {
+  margin-top: 16px;
+}
+.m-t-md {
+  margin-top: 32px;
+}
+.m-t-lg {
+  margin-top: 64px;
 }
