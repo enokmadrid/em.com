@@ -83,7 +83,7 @@ function onStart()
                                 {{project.tools | raw }}
                             </div>
                         </div>
-                        
+
                         <div class="col-md-12 m-t-sm">
                             <a href="{{project.url}}" target="_blank" class="btn btn-sm btn-primary round btn-space">
                                 Launch Project
@@ -136,14 +136,14 @@ function onStart()
         
         <!-- Checks to see if current project is not the first, if the first then do not show Prev link -->
         {% if project.id != projects[0].id %}
-             <a href="{{detailsPage|page({ (detailsUrlParameter): prevPageUrl  }) }}" class="flex-link">
+             <a href="{{detailsPage|page({ (detailsUrlParameter): prevPageUrl  }) }}" class="flex-link btn btn-link">
                 <i class="icon icon-arrow-left"></i><span>Previous Project</span>
             </a>
         {% endif %}
         
         <!-- Checks to see if current project is not the Last, if the Last then do not show Next link -->
         {% if project.id != projects|length %}
-             <a href="{{detailsPage|page({ (detailsUrlParameter): nextPageUrl  }) }}" class="flex-link">
+             <a href="{{detailsPage|page({ (detailsUrlParameter): nextPageUrl  }) }}" class="flex-link btn btn-link">
                 <span>Next Project</span> <i class="icon icon-arrow-right"></i>
             </a>
         {% endif %}
