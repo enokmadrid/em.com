@@ -24,10 +24,6 @@
       margin-top: 20px;
     }
 
-    .btn {
-      margin-top: 60px;
-    }
-
     .scroll {
       margin-top: 0 !important;
       position: absolute;
@@ -107,8 +103,8 @@
     border: none;
 
     img {
-      width: 65px;
-      margin-bottom: 30px;
+      height: 65px;
+      margin: 30px auto;
     }
 
     .card-subtitle, p {
@@ -131,7 +127,6 @@
 .section-title {
   width: 100%;
   display: block;
-  margin-bottom: 40px;
 
   h1,h2,h3,h4,h5,h6,p {
     text-align: center;
@@ -192,22 +187,20 @@
   background-size: cover;
   padding: 200px 0;
 
-  h1, li, p {
+  .project-title, li, p {
     color: #fff;
   }
 
-  h1 {
+  .project-title {
     font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    
     word-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -o-hyphens: auto;
     hyphens: auto;
-  }
-
-  .project-title {
-    font-weight: 600;
   }
 
   .project-tags {
@@ -236,11 +229,11 @@
   }
 }
 
-.project--description {
-}
+// .project--description {
+// }
 
-.project--image {
-}
+// .project--image {
+// }
 
 .footer-page {
   margin:0;

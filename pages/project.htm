@@ -46,7 +46,7 @@ function onStart()
 {% partial "navigation-menu" %}
 
 
-<div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ project.hero_image | media }}');">
+<div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="backgrounded-pill-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ project.hero_image | media }}');">
     <div class="container text-xs-center">
         {% if project %}
         <h1 class="display-3">{{project.title}}</h1>
@@ -85,11 +85,11 @@ function onStart()
                         </div>
 
                         <div class="col-md-12 m-t-sm">
-                            <a href="{{project.url}}" target="_blank" class="btn btn-sm btn-primary round btn-space">
+                            <a href="{{project.url}}" target="_blank" class="btn btn-sm btn-primary rounded-pill btn-space">
                                 Launch Project
                             </a>
                             <br>
-                            <a href="#" class="btn btn-sm btn-primary-outline round">
+                            <a href="#" class="btn btn-sm btn-primary-outline rounded-pill">
                                 <i class="fa fa-share-alt"></i>
                                 Share this project
                             </a>

@@ -43,6 +43,7 @@
     .flex-link {
       background: $brand-black-light;
       color: #8787A0;
+      height: inherit;
 
       &:hover {
         background: $brand-black;
@@ -238,7 +239,7 @@
         align-items: center;
         justify-content: center;
         font-family: "proxima-nova";
-        font-size: 20px;
+        font-size: 1rem;
         margin: 0 30px;
 
         a {

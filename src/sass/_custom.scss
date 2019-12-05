@@ -1,0 +1,73 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+$white:    #fff !default;
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-action-primary:      #FF1A55 !default;
+$brand-action-secondary:    #BF0E66 !default;
+$primary:                   $brand-action-primary !default;
+$secondary:                 #8984FA !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $white !default;
+$body-color:                $gray-dark !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $primary !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1rem !default;
+$font-size-lg:                $font-size-base * 1.25 !default;
+$font-size-sm:                $font-size-base * .875 !default;
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y-lg:         .8rem !default;
+$input-btn-padding-x-lg:         2.5rem !default;
+$input-btn-font-size-lg:         1rem !default;
+
+$btn-padding-y-lg:               $input-btn-padding-y-lg !default;
+$btn-padding-x-lg:               $input-btn-padding-x-lg !default;
+$btn-font-size-lg:               $input-btn-font-size-lg !default;
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 640px,
+  md: 720px,
+  lg: 940px,
+  xl: 1160px
+) !default;
+
+

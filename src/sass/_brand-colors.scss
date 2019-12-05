@@ -21,8 +21,8 @@ $gray-lightest:             #f7f7f9;
 $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //BRAND GRADIENT Action
-.brand-gradient-action {
-  background: $brand-action-secondary; /* Old browsers */
+.brand-gradient {
+  background: $brand-action-primary; /* Old browsers */
   background: -moz-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -30,7 +30,7 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
   border: none;
 
   &.btn:hover {
-    background: $brand-action-secondary; /* Old browsers */
+    background: $brand-action-primary; /* Old browsers */
     background: -moz-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -39,7 +39,7 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
 }
 
 //BRAND GRADIENT PRIMARY
-.brand-gradient-primary {
+.brand-gradient-secondary {
   background: $brand-secondary; /* Old browsers */
   background: -moz-linear-gradient(45deg, $brand-secondary 0%, $brand-primary 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, $brand-secondary 0%,$brand-primary 100%); /* Chrome10-25,Safari5.1-6 */
