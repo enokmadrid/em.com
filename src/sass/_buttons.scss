@@ -46,6 +46,7 @@
   &:hover {
     &:after {
       left: 12px;
+      transition: all 0.15s ease-in-out;
     }
   }
 }

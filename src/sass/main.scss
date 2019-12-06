@@ -173,10 +173,6 @@
 
 .section-subdivision {
   padding: 60px 0;
-
-  h4 {
-    font-weight: 600;
-  }
 }
 
 //*********** FEATURED PROJECT ***********
@@ -192,9 +188,7 @@
   }
 
   .project-title {
-    font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 600;
-    
+    font-weight: 800;
     word-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -206,18 +200,19 @@
   .project-tags {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
-    margin-bottom: 40px;
 
     li {
       display: inline;
-      font-size: 13px;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      opacity: 0.4;
 
       &:not(:first-child) {
         padding-left: 4px;
 
         &::before {
-          content: "-";
+          // content: "-";
           padding-right: 8px;
         }
       }
@@ -250,15 +245,16 @@
   .footer--row {
     background: rgba(0,0,0,.2);
 
-    small:not(i) {
-      color: #8787A0;
+    small, i {
+      color: $gray-light;
     }
 
     i {
-      color: lighten($brand-black-lighter, 20%);
+      opacity: 0.7;
     }
+
     .fa-heart {
-      color: $brand-danger;
+      color: $primary;
     }
 
     div {
@@ -271,6 +267,12 @@
       display: inline-flex;
       align-items: center;
       padding-left: 20px;
+      &:hover {
+        i {
+          transition: all 0.15s ease-in-out;
+          opacity: 1;
+        }
+      }
     }
   }
 }
