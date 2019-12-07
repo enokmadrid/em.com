@@ -1,6 +1,5 @@
 @import "bootstrap";
 @import 'mixins.scss';
-@import "brand-colors";
 @import "navigation";
 @import "typography";
 @import "buttons";
@@ -12,12 +11,13 @@
   &.dark {
     background-color: $brand-black;
 
+
     h1,h2,h3,h4,h5,h6,p,a:not(.btn){
       color: white;
     }
 
     &.shift-up {
-      margin-top: -100px;
+      margin-top: -88px;
     }
 
     .lead {

@@ -6,3 +6,7 @@ function showSuccess() {
     $('#flexiContactForm').slideUp("fast");
     $('#success-message').slideDown( "fast" );
 }
+
+$('.nav-icon').click(function(){
+    $(this).toggleClass('open');
+});

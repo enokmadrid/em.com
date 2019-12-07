@@ -1,22 +1,22 @@
-// BRAND COLORS
-$brand-action-primary:      #FF1A55;
-$brand-action-secondary:    #BF0E66;
-$brand-primary:             #8984FA;
-$brand-secondary:           #5952F9;
-$brand-black:               #101018;
-$brand-black-light:         lighten($brand-black, 10%);
-$brand-black-lighter:       #2E2E36;
+// Brand Colors
+$brand-action-primary:      #FF1A55 !default;
+$brand-action-secondary:    #BF0E66 !default;
+$brand-primary:             #8984FA !default;
+$brand-secondary:           #5952F9 !default;
+$brand-black:               #101018 !default;
+$brand-black-light:         lighten($brand-black, 10%)  !default;
+$brand-black-lighter:       #2E2E36 !default;
 
-$brand-success:             #5cb85c !default;
-$brand-info:                #5bc0de !default;
-$brand-warning:             #f0ad4e !default;
-$brand-danger:              #d9534f !default;
+// Bootstrap 4.4.1 Variables map
+$primary:                   $brand-action-primary !default;
+$secondary:                 $brand-primary !default;
 
-$gray-dark:                 #373a3c;
-$gray:                      #55595c;
-$gray-light:                #818a91;
-$gray-lighter:              #eceeef;
-$gray-lightest:             #f7f7f9;
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+$white:                     #ffffff !default;
 
 $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 

@@ -4,41 +4,29 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-$white:    #fff !default;
-
-$gray-dark:                 #373a3c !default;
-$gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
-$gray-lightest:             #f7f7f9 !default;
-
-$brand-action-primary:      #FF1A55 !default;
-$brand-action-secondary:    #BF0E66 !default;
-$primary:                   $brand-action-primary !default;
-$secondary:                 #8984FA !default;
+@import "brand-colors";
 
 // Body
-//
-// Settings for the `<body>` element.
+$body-bg:                           $white !default;
+$body-color:                        $gray-dark !default;
 
-$body-bg:                   $white !default;
-$body-color:                $gray-dark !default;
+
+// $border-width:                      0 !default;
 
 // Links
-//
-// Style anchor elements.
+$link-color:                        $primary !default;
 
-$link-color:                              $primary !default;
+// Navs
+$nav-link-padding-y:                0.5rem !default;
+$nav-link-padding-x:                2rem !default;
 
+// Navbar
+$navbar-nav-link-padding-x:         2rem !default;
+$navbar-brand-font-size:            1.375rem !default;
 
 // Typography
-//
-// Font, line-height, and color for body text, headings, and more.
-
-// stylelint-disable value-keyword-case
 $font-family-sans-serif:      'Poppins', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
@@ -61,6 +49,7 @@ $display2-weight:             800 !default;
 $display3-weight:             800 !default;
 $display4-weight:             800 !default;
 
+$enable-responsive-font-sizes:                true !default;
 
 
 // Buttons + Forms

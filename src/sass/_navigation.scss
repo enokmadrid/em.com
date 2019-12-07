@@ -177,7 +177,8 @@
     }
   }
 
-  // LOGO CONTAINER
+  
+
   .box {
     list-style: none;
 
@@ -283,6 +284,81 @@
       &:hover {
         color: $brand-primary;
       }
+    }
+  }
+}
+
+// Navbar
+.navbar-transparent {
+  background-color: transparent !important;
+}
+// LOGO CONTAINER
+.navbar-brand {
+  color: $brand-black-light;
+  font-weight: 600;
+
+  &:hover, &:focus, &:active {
+    text-decoration: none;
+  }
+  .logo {
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+.nav-link {
+  font-family: "proxima-nova";
+  font-size: 1rem;
+}
+
+// Mobile Navigation Bar
+.navbar-toggler {
+  padding: 8px;
+  border: none;
+}
+.nav-icon {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  
+  span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    opacity: 1;
+    left: 0;
+    transition: .25s ease-in-out;
+   
+    &:nth-child(1) {
+      top: 0px;
+    }
+   
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 10px;
+    }
+    
+    &:nth-child(4) {
+      top: 20px;
+    }
+  }
+  
+  &.open span {
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(1),
+    &:nth-child(4) {
+      top: 10px;
+      width: 0%;
+      left: 50%;
+    }
+    &:nth-child(3) {
+      transform: rotate(-45deg);
     }
   }
 }
