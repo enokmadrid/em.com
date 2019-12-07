@@ -3,13 +3,17 @@ url = "/about"
 layout = "default"
 is_hidden = 0
 ==
+<?php
+function onStart()
+{
+    $this['islight'] = true;
+}
+?>
+==
 {% partial "mobile-menu" %}
-
 {% partial "navigation-menu" %}
 
-
 <section class="container-fluid" id="about">
-
         <div class="container">
             <div class="row text-xs-center text-md-left">
                 <h1 class="display-4 col-md-6 col-xs-12 copy-intro">A bit about me <br> <small class="c-primary">Allow me to reintroduce myself</small></h1>
@@ -34,8 +38,7 @@ is_hidden = 0
                         <a target="_blank" href="http://www.airbrushlasvegas.com/enok-madrid">airbrush paintings</a> or simply plan for my next
                         <a target="_blank" href="http://www.enok-one.com">graffiti mural</a>. I’m always into something.
                     </p>
-                    <a class="btn btn-lg btn-outline-primary rounded-pill" href="https://www.linkedin.com/in/enokmadrid" target="_blank" role="button">View Resume</a>
-
+                    <a class="btn btn-lg btn-outline-primary rounded-pill hasArrow __right" href="https://www.linkedin.com/in/enokmadrid" target="_blank" role="button">View Resume</a>
                 </div>
             </div>
         </div>

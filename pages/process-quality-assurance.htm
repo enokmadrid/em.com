@@ -12,11 +12,8 @@ function onStart()
 }
 ?>
 ==
-
 {% partial "mobile-menu" %}
-
 {% partial "navigation-menu" %}
-
 
 <div class="jumbotron jumbotron-fluid dark shift-up">
     <div class="container text-xs-center">
@@ -25,11 +22,9 @@ function onStart()
     </div>
 </div>
 
-
 {% partial "navigation-process" %}
 
 <section class="container-fluid bg--gray">
-
     <div class="container content--container">
         <div class="row">
             <div class="col-xs-12 text-xs-center">
@@ -61,17 +56,13 @@ function onStart()
 
                 </div>
             </div>
-
-
         </div>
-
     </div>
-
 </section> <!-- /container -->
 
 
 <div class="flexbox-container content--menu">
-    <a href="{{ 'process-code'|page }}" class="flex-link btn btn-link">
-        <i class="icon icon-arrow-left"></i><span>Previous Step</span>
+    <a href="{{ 'process-code'|page }}" class="flex-link btn btn-link hasArrow __left">
+        <span>Previous Step</span>
     </a>
 </div>

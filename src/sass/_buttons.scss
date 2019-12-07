@@ -33,20 +33,31 @@
 // }
 
 .hasArrow {
-  &:after {
-    content: "\65";
+  &.__right::after, 
+  &.__left::before {
     font-family: "streamline-icons-font" !important;
-    opacity: 0.5;
+    opacity: 1;
     position: relative;
-    top: 4px;
-    left: 8px;
+    top: 3px;
     line-height: 0.9;
     transition: all 0.15s ease-in-out;
   }
-  &:hover {
-    &:after {
-      left: 12px;
-      transition: all 0.15s ease-in-out;
+  &.__right {
+    &::after {
+      content: "\65";
+      left: 8px;
+    }
+    &:hover::after {
+      left: 15px;
+    }
+  }
+  &.__left {
+    &::before {
+      content: "\63";
+      right: 8px;
+    }
+    &:hover::before {
+      right: 15px;
     }
   }
 }
