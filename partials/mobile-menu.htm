@@ -1,13 +1,13 @@
 <div class="sticky-header fixed-bottom">
     <div class="flexbox-container mobile-menu d-flex d-md-none">
         <a href="{{ 'homepage'|page }}" class="flex-link {% if this.page.id == 'homepage' %}active{% endif %}">
-            <i class="icon icon-home">
-                <span>Home</span>
-            </i>
-        </a>
-        <a href="{{ 'work'|page }}" class="flex-link {% if this.page.id == 'work' %}active{% endif %}">
             <i class="icon icon-toolbox">
                 <span>Work</span>
+            </i>
+        </a>
+        <a href="{{ 'about'|page }}" class="flex-link {% if this.page.id == 'about' %}active{% endif %}">
+            <i class="icon icon-person">
+                <span>About</span>
             </i>
         </a>
         <a href="{{ 'process-discovery'|page }}" class="flex-link {% if this.page.id == 'process-discovery' %}active{% endif %}">

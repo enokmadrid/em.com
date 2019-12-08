@@ -12,11 +12,8 @@ function onStart()
 }
 ?>
 ==
-
 {% partial "mobile-menu" %}
-
 {% partial "navigation-menu" %}
-
 
 <div class="jumbotron jumbotron-fluid dark shift-up">
     <div class="container text-center">
@@ -24,7 +21,6 @@ function onStart()
         <p class="lead d-none d-sm-block">This is a high-level view of my core skills</p>
     </div>
 </div>
-
 
 {% partial "navigation-process" %}
 
@@ -56,16 +52,15 @@ function onStart()
                 <p>
                     Otherwise, if it’s a new product, I create user stories, scenarios, and user flows to find the best experience for the end user.
                 </p>
-
             </div>
 
             <div class="col-md-12 content--images">
-                <div class="row m-t-25">
-                    <div class="col-xs-6">
-                        <img class="img-fluid" src="{{ 'assets/images/process-discovery-study-website.png' | theme }}" alt="">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="img-fluid d-block mx-auto" src="{{ 'assets/images/process-discovery-study-website.png' | theme }}" alt="">
                     </div>
-                    <div class="col-xs-6">
-                        <img class="img-fluid" src="{{ 'assets/images/process-discovery-personas.png' | theme }}" alt="">
+                    <div class="col-sm-6">
+                        <img class="img-fluid d-block mx-auto" src="{{ 'assets/images/process-discovery-personas.png' | theme }}" alt="">
                     </div>
                 </div>
             </div>
