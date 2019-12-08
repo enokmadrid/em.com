@@ -47,7 +47,7 @@ function onStart()
 
 
 <div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="backgrounded-pill-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ project.hero_image | media }}');">
-    <div class="container text-xs-center">
+    <div class="container text-center">
         {% if project %}
         <h1 class="display-3">{{project.title}}</h1>
         <img class="img-fluid featured-image" src="{{ project.featured_image | media }}" alt="">
@@ -84,7 +84,7 @@ function onStart()
                             </div>
                         </div>
 
-                        <div class="col-md-12 m-t-sm">
+                        <div class="col-md-12 mt-3">
                             <a href="{{project.url}}" target="_blank" class="btn btn-sm btn-primary rounded-pill btn-space">
                                 Launch Project
                             </a>
@@ -106,7 +106,7 @@ function onStart()
 
             {% else %}
             <div class="row text-xs-center">
-                <p class="col-xs-12">{{ notFoundMessage }}</p>
+                <p class="col-12">{{ notFoundMessage }}</p>
             </div>
             {% endif %}
         </div>
@@ -115,7 +115,7 @@ function onStart()
 <section class="container-fluid cms-editable format-paragraph">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-12">
                 {{project.content | raw}}
 
             </div>
@@ -136,15 +136,15 @@ function onStart()
         
         <!-- Checks to see if current project is not the first, if the first then do not show Prev link -->
         {% if project.id != projects[0].id %}
-             <a href="{{detailsPage|page({ (detailsUrlParameter): prevPageUrl  }) }}" class="flex-link btn btn-link">
-                <i class="icon icon-arrow-left"></i><span>Previous Project</span>
+             <a href="{{detailsPage|page({ (detailsUrlParameter): prevPageUrl  }) }}" class="flex-link btn btn-link hasArrow __left">
+                </i><span>Previous Project</span>
             </a>
         {% endif %}
         
         <!-- Checks to see if current project is not the Last, if the Last then do not show Next link -->
         {% if project.id != projects|length %}
-             <a href="{{detailsPage|page({ (detailsUrlParameter): nextPageUrl  }) }}" class="flex-link btn btn-link">
-                <span>Next Project</span> <i class="icon icon-arrow-right"></i>
+             <a href="{{detailsPage|page({ (detailsUrlParameter): nextPageUrl  }) }}" class="flex-link btn btn-link hasArrow __right">
+                <span>Next Project</span>
             </a>
         {% endif %}
         
