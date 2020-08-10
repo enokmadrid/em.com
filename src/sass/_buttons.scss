@@ -38,7 +38,7 @@
     font-family: "streamline-icons-font" !important;
     opacity: 1;
     position: relative;
-    top: 3px;
+    top: 2px;
     line-height: 0.9;
     transition: all 0.15s ease-in-out;
   }
@@ -46,6 +46,7 @@
     &::after {
       content: "\65";
       left: 8px;
+      text-transform: none;
     }
     &:hover::after {
       left: 15px;
@@ -61,6 +62,20 @@
     }
   }
 }
+
+.btn {
+  &.btn-sm {
+    font-size: 0.7rem;
+    letter-spacing: 0.02rem;
+  }
+  &.btn-lg {
+    font-size: 0.875rem;
+  }
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-size: 0.875rem;
+}
+
 
 .btn-space {
   margin-bottom: 6px;
