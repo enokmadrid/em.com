@@ -319,6 +319,12 @@
   background-color: transparent !important;
 }
 // LOGO CONTAINER
+.navbar-dark .navbar-brand {
+  &:hover {
+    color: $brand-black-light;
+  }
+  color: $brand-black-light;
+}
 .navbar-brand {
   color: $brand-black-light;
   font-weight: 600;
