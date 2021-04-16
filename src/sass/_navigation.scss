@@ -319,14 +319,14 @@
   background-color: transparent !important;
 }
 // LOGO CONTAINER
-.navbar-dark .navbar-brand {
+.navbar-split .navbar-brand {
   &:hover {
-    color: $brand-black-light;
+    color: $brand-text;
   }
-  color: $brand-black-light;
+  color: $brand-text;
 }
 .navbar-brand {
-  color: $brand-black-light;
+  color: $brand-text;
   font-weight: 600;
 
   &:hover, &:focus, &:active {
@@ -344,6 +344,7 @@
   font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: color 250ms ease-in-out;
 }
 
 // Mobile Navigation Bar
