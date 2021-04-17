@@ -7,16 +7,23 @@ is_hidden = 0
 function onStart()
 {
     $this['isDark'] = true;
+    $this['isSplit'] = true;
 }
 ?>
 ==
 {% partial "mobile-menu" %}
 {% partial "navigation-menu" %}
 
-<div class="jumbotron jumbotron-fluid {% if isDark %} dark {% endif %} shift-up hero fullscreen">
-    <div class="container">
-        <h1 class="display-2">Digital Product<br>Designer</h1>
-        <p class="lead">Portfolio of Enok Madrid</p>
+<div class="jumbotron jumbotron-fluid shift-up hero fullscreen">
+    <div class="container position-relative z-5">
+        <div class="d-flex">
+            <div class="copy-hero">
+                <h1 class="display-2">Product UX Designer</h1>
+                <p class="lead mt-4">Portfolio of Enok Madrid</p>
+            </div>
+            <span class="align-self-center gravatar large"></span>
+        </div>
+        
 
         <div class="mt-5">
             <a href="https://goo.gl/forms/ipwbE95jv0x5FXbX2" target="_blank" class="btn btn-lg btn-primary brand-gradient rounded-pill" role="button">Hire Me</a>
@@ -25,6 +32,11 @@ function onStart()
         <!--<span class="scroll">-->
             <!--<i class="icon-arrow-down icons animated infinite pulse"></i>-->
         <!--</span>-->
+    </div>
+    <div class="overflow-hidden d-none d-lg-block">
+        <div class="angle-split">
+            <div data-w-id="3e5cf3bc-8b4e-f591-349a-13c1ef7162c6" class="pattern-bg"></div>
+        </div>
     </div>
 </div>
 
@@ -35,9 +47,7 @@ function onStart()
             <div class="section-title">
                 <h2 class="display-4">What I do </h2>
                 <p class="section-subtitle">I Design Interfaces for Digital Product Experiences</p>
-            </div>
-
-            <div class="container">
+            
                 <div class="row">
                 <div class="col-md-4 col-sm-6 col-xs-12">
                     <div class="card">
@@ -111,7 +121,7 @@ function onStart()
 <!-- SECTION SUBDIVISION -->
 <section class="container-fluid bg--gray">
     <div class="container section-subdivision text-center text-md-left">
-        <h4 class="display-4 px-3">Featured Work</h4>
+        <h4 class="display-4">Featured Work</h4>
     </div>
 </section>
 

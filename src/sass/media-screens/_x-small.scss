@@ -1,32 +1,31 @@
 // Extra small devices (portrait phones, less than 544px)
 @media (max-width: 543px) {
   // mobile menu with smaller icons
-  .flexbox-container.mobile-menu{
+  .flexbox-container.mobile-menu {
     height: 65px;
     display: -webkit-box;
-    &.process{
+    &.process {
       display: flex;
     }
-    i{
-      &:before{font-size: 20px;}
-      span{
+    i {
+      &:before { font-size: 20px; }
+      span {
         padding-top: 0;
         margin-top:-15px;
         font-size: 11px;
         font-weight: 400;
         font-style: normal;
-
       }
     }
   }
 
-  .flexbox-container.content--menu{
+  .flexbox-container.content--menu {
     height: 65px;
-    .btn{
+    .btn {
       font-size: 0.9rem;
       padding: 0;
     }
-    .icon{ font-size: 1rem; }
+    .icon { font-size: 1rem; }
   }
 
   // display text
@@ -35,30 +34,31 @@
   .display-4 {
     font-size: 2rem;
   }
-  .lead{
+  .lead {
     font-size: 23px !important;
     padding-top: 10px;
   }
-  .hero{
+  .hero {
     text-align: center;
-    .btn{
+    .btn {
       margin-top: 20px !important;
     }
     height:100vh;
   }
-  .logo{
-    img{ height:50px;
+  .logo {
+    img { 
+      height:50px;
       width:50px;
       margin-top: 20px;
     }
   }
-  .shift-up{
+  .shift-up {
     padding: 120px 0 20px;
   }
-  .scroll{
+  .scroll {
     bottom: 15% !important;
 
-      i:before{
+      i:before {
         -vendor-animation-duration: 3s;
         -vendor-animation-delay: 2s;
         -vendor-animation-iteration-count: infinite;
@@ -73,7 +73,7 @@
     }
   }
 
-  p{
+  p {
     font-size: 16px !important;
     line-height: 1.4rem !important;
   }
@@ -86,14 +86,13 @@
   .project--fullwidth { padding: 80px 0 !important; }
   .project--image,
   .project--description,
-  .project-text
-  {
+  .project-text {
     text-align: center;
     padding: 0 20px;
   }
-  .project-title{ font-size: 32px; }
-  .project-tags{
-    li{ font-size: 12px !important; }
+  .project-title { font-size: 32px; }
+  .project-tags {
+    li { font-size: 12px !important; }
   }
 
   .btn-lg {
@@ -119,19 +118,18 @@
       -webkit-flex: initial;
       -ms-flex: initial;
       flex: initial;
-      small{
+      small {
         display:block;
         font-size: 13px;
         padding: 10px 28px;
         line-height: 1.5;
       }
-      .fa-2x{ font-size: 1.5em; }
-      li{ padding: 10px; }
+      .fa-2x { font-size: 1.5em; }
+      li { padding: 10px; }
     }
-
   }
 
-  .portfolio--grid{
+  .portfolio--grid {
     .flex-link {
       flex: initial;
     }
@@ -141,7 +139,7 @@
   .cms-editable {
     padding-top: 24px;
     padding-bottom: 24px;
-    .content--icon{
+    .content--icon {
       font-size: 4rem;
       height: 110px;
     }
@@ -162,24 +160,26 @@
     }
   }
 
-  .content--about{
+  .content--about {
     padding-top: 10px;
   }
 }
 
 @media (max-width: 284px) {
-  .btn, .btn-lg{
+  .btn, .btn-lg {
     width: 100%;
     text-align: center;
     font-size: 7vw;
   }
-  .project--description{
-    .btn-lg{
+  .project--description {
+    .btn-lg {
       font-size: 5vw;
     }
   }
-  .display-4{ font-size: 1.5rem; }
-  .lead{
+  .display-4 { 
+    font-size: 1.5rem; 
+  }
+  .lead {
     font-size: 18px !important;
   }
 }

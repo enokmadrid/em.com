@@ -318,9 +318,27 @@
 .navbar-transparent {
   background-color: transparent !important;
 }
+.navbar-light {
+  background: white;
+}
+.navbar {
+  transition: all 350ms ease-in-out;
+  transition-delay: 350ms;
+  transition-property: transform;
+}
+.navbar-offset {
+  transform: translateY(-70px);
+}
+
 // LOGO CONTAINER
+.navbar-split .navbar-brand {
+  &:hover {
+    color: $brand-text;
+  }
+  color: $brand-text;
+}
 .navbar-brand {
-  color: $brand-black-light;
+  color: $brand-text;
   font-weight: 600;
 
   &:hover, &:focus, &:active {
@@ -334,8 +352,11 @@
 
 .nav-link {
   font-family: "proxima-nova";
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 250ms ease-in-out;
 }
 
 // Mobile Navigation Bar

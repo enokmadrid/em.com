@@ -32,7 +32,8 @@
 .page-box {
   @extend .box-shadow;
   background: #FFFFFF;
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
   border-radius: 4px;
 }
 .offset-top {
@@ -44,6 +45,9 @@
   text-align: center;
 }
 
+/*======================================
+=             MARGINS SPACES           =
+======================================*/
 .m-t-sm {
   margin-top: 16px;
 }
@@ -53,3 +57,14 @@
 .m-t-lg {
   margin-top: 64px;
 }
+
+
+/*======================================
+=              Z-INDEXES               =
+======================================*/
+.z-1  { z-index: 1; }
+.z-5  { z-index: 5; }
+.z-10 { z-index: 10; }
+.z-15 { z-index: 15; }
+.z-20 { z-index: 20; }
+.z-25 { z-index: 25; }

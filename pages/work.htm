@@ -3,6 +3,13 @@ url = "/work"
 layout = "default"
 is_hidden = 0
 ==
+<?php
+function onStart()
+{
+    $this['islight'] = true;
+}
+?>
+==
 {% partial "mobile-menu" %}
 
 {% partial "navigation-menu" %}
