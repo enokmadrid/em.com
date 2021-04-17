@@ -318,6 +318,18 @@
 .navbar-transparent {
   background-color: transparent !important;
 }
+.navbar-light {
+  background: white;
+}
+.navbar {
+  transition: all 350ms ease-in-out;
+  transition-delay: 350ms;
+  transition-property: transform;
+}
+.navbar-offset {
+  transform: translateY(-70px);
+}
+
 // LOGO CONTAINER
 .navbar-split .navbar-brand {
   &:hover {
