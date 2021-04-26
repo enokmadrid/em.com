@@ -1,5 +1,5 @@
 // Small devices (landscape phones, less than 768px)
-@media (min-width: 544px) and (max-width: 767px) {
+@include media-breakpoint-only(sm) {
   // mobile menu with smaller icons
   .flexbox-container.mobile-menu {
     height: 95px;

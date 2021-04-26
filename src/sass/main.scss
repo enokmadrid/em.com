@@ -25,6 +25,13 @@
     margin-top: -88px;
   }
 
+  &.hero > .container {
+    @include media-breakpoint-down(xs) {
+      position: absolute;
+      top: 40%;
+    }
+  }
+
   .copy-hero {
     @include media-breakpoint-down(md) {
       width: 100%;

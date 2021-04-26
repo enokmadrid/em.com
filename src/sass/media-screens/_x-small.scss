@@ -1,5 +1,5 @@
 // Extra small devices (portrait phones, less than 544px)
-@media (max-width: 543px) {
+@include media-breakpoint-down(xs) {
   // mobile menu with smaller icons
   .flexbox-container.mobile-menu {
     height: 65px;
