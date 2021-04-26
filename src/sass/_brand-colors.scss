@@ -24,18 +24,16 @@ $font-family-sans-serif:    'Poppins', "Helvetica Neue", Helvetica, Arial, sans-
 //BRAND GRADIENT Action
 .brand-gradient {
   background: $brand-action-primary; /* Old browsers */
-  background: -moz-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(to right, $brand-action-secondary 0%, $brand-action-secondary 15%, $brand-action-primary 50%, $brand-action-secondary 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(to right, $brand-action-secondary 0%, $brand-action-secondary 15%, $brand-action-primary 50%, $brand-action-secondary 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $brand-action-secondary 0%, $brand-action-secondary 15%, $brand-action-primary 50%, $brand-action-secondary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-action-secondary', endColorstr='$brand-action-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  border: none;
+  background-size: 200% auto;
+  background-position: right;
+  border: none !important;
 
   &.btn:hover {
-    background: $brand-action-primary; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(-45deg, $brand-action-secondary 0%, $brand-action-primary 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand-action-secondary', endColorstr='$brand-action-primary',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-position: left;
   }
 }
 

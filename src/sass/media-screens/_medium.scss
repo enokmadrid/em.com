@@ -1,5 +1,5 @@
 // Medium devices (tablets, less than 992px)
-@media (min-width: 768px) and (max-width: 991px) {
+@include media-breakpoint-only(md) {
   .flexbox-container .box:first-child {
     flex: 2;
   }
