@@ -2,7 +2,7 @@
 @include media-breakpoint-down(xs) {
   // mobile menu with smaller icons
   .flexbox-container.mobile-menu {
-    height: 65px;
+    height: 64px;
     display: -webkit-box;
     &.process {
       display: flex;
@@ -11,9 +11,8 @@
       &:before { font-size: 20px; }
       span {
         padding-top: 0;
-        margin-top:-15px;
-        font-size: 11px;
-        font-weight: 400;
+        margin-top: -8px;
+        font-size: 10px;
         font-style: normal;
       }
     }
@@ -59,9 +58,9 @@
     bottom: 15% !important;
 
       i:before {
-        -vendor-animation-duration: 3s;
-        -vendor-animation-delay: 2s;
-        -vendor-animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
       }
 
   }
@@ -100,9 +99,6 @@
     margin-bottom: 40px;
   }
 
-  #about {
-    padding: 40px 0;
-  }
   .footer-page { padding-top: 40px; }
 
   .footer-page .btn-lg {

@@ -22,7 +22,9 @@
   }
 
   &.shift-up {
-    margin-top: -88px;
+    @include media-breakpoint-up(sm) {
+      margin-top: -88px;
+    }
   }
 
   &.hero > .container {
