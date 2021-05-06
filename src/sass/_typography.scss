@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "housky";
+  src: url("../fonts/housky.woff") format("woff");
+}
+
+.decoration-text {
+  font-family: 'housky';
+  text-transform: capitalize;
+  font-weight: 400;
+  color: $brand-primary;
+}
+
+.decoration-line:after {
+    content: "";
+    display: block;
+    height: $space-micro;
+    width: 36px;
+    background: $brand-action-primary;
+    margin-top: $space-standard;  
+    @include media-breakpoint-down(xs) {
+      margin: $space-small auto;
+    }
+}
+
 // FONT SMOOTHING
 body {
   -webkit-font-smoothing: antialiased;
@@ -5,8 +29,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   // FONT STYLES
   p {
-    font-family: "proxima-nova";
-    &.lead{ font-size: 1.45rem;}
+    &.lead { font-size: 1.25rem; }
     line-height: 1.7rem;
     color: #525f7f;
     font-weight: 400;
@@ -23,30 +46,38 @@ body {
 }
 
 
-// HEADERS
+// HEADINGS
+h1,h2,h3,h4,h5,h6 {
+  font-family: trumpgothicpro, sans-serif;
+  text-transform: uppercase;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  line-height: 1;
+}
+
 .display-1 {
-  letter-spacing: -6px;
   small {
     font-size: 70%; letter-spacing: -3px;
   }
 }
 
 .display-2 {
-  letter-spacing: -2px;
   small {
     font-size: 60%; letter-spacing: -2px;
   }
 }
 
 .display-3 {
-  letter-spacing: -3px;
   small {
     font-size: 55%; letter-spacing: -2px;
   }
 }
 
 .display-4 {
-  letter-spacing: -1px;
   small {
     font-size: 50%; letter-spacing: -1px;
   }
