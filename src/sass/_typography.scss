@@ -4,8 +4,8 @@
 }
 
 .decoration-text {
-  font-family: 'housky';
-  text-transform: capitalize;
+  font-family: 'housky' !important;
+  text-transform: capitalize !important;
   font-weight: 400;
   color: $brand-primary;
 }
