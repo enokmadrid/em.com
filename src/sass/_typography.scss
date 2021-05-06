@@ -48,8 +48,18 @@ body {
 
 // HEADINGS
 h1,h2,h3,h4,h5,h6 {
-  font-family: trumpgothicpro, sans-serif;
-  text-transform: uppercase;
+  &:not(.content--title){
+    font-family: trumpgothicpro, sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+// DEFAULT HEADINGS TO PROXIMA NOVA ON PROJECT CONTENT
+.format-paragraph {
+  h1,h2,h3,h4,h5,h6 { 
+    font-family: proxima-nova !important;
+    font-weight: 600;
+  }
 }
 
 .display-1,
