@@ -7692,7 +7692,7 @@ h1:not(.content--title), h2:not(.content--title), h3:not(.content--title), h4:no
       padding: 120px 0; } }
   @media (min-width: 768px) {
     .jumbotron-fluid.shift-up {
-      padding: 300px 0 60px;
+      padding: 250px 0 60px;
       margin-top: -88px; } }
   @media (max-width: 575.98px) {
     .jumbotron-fluid.hero {
