@@ -1,0 +1,17 @@
+title = "Blog"
+url = "/blog/:filter?/:slug?/"
+layout = "default"
+is_hidden = 1
+robot_index = "index"
+robot_follow = "follow"
+
+[proBlogList]
+postsPerPage = 10
+filter_type = "none"
+searchpage = "blog"
+render = "specific"
+specific = "blog-post"
+==
+{% partial "mobile-menu" %}
+
+{% component 'proBlogList' %}

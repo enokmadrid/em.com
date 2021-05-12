@@ -1,18 +1,12 @@
-title = "Account"
-url = "/account"
+title = "Blog Post"
+url = "/blog/post/:slug/"
 layout = "default"
-is_hidden = 1
+is_hidden = 0
 robot_index = "index"
 robot_follow = "follow"
 
-[account]
-redirect = "private"
-paramCode = "code"
-forceSecure = 0
-requirePassword = 0
-
-[session]
-security = "all"
+[proBlogPost]
+slug = ":slug"
 ==
 <?php
 function onStart() {
@@ -24,5 +18,5 @@ function onStart() {
 {% partial "navigation-menu" %}
 
 <div class="container mt-5 pt-5">
-{% component 'account' %}
+{% component 'proBlogPost' %}
 </div>
