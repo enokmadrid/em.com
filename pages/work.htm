@@ -2,6 +2,8 @@ title = "Work"
 url = "/work"
 layout = "default"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 ==
 <?php
 function onStart()
@@ -10,10 +12,6 @@ function onStart()
 }
 ?>
 ==
-{% partial "mobile-menu" %}
-
-{% partial "navigation-menu" %}
-
 <div class="jumbotron jumbotron-fluid shift-up">
     <div class="container text-xs-center">
         <h1 class="display-3">Featured Work</h1>
@@ -21,5 +19,3 @@ function onStart()
 </div>
 
 {% partial "featured-projects" %}
-
-{# {% partial "branding" %} #}

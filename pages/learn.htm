@@ -3,6 +3,8 @@ url = "/learn"
 layout = "default"
 description = "Learn Courses"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 ==
 <?php
 function onStart()
@@ -11,9 +13,6 @@ function onStart()
 }
 ?>
 ==
-{% partial "mobile-menu" %}
-{% partial "navigation-menu" %}
-
 <div class="jumbotron jumbotron-fluid dark shift-up">
     <div class="container text-xs-center">
         <h1 class="display-3">Online UI/UX Course</h1>

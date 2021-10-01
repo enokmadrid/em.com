@@ -1,0 +1,29 @@
+title = "Blog"
+url = "/blog/:filter?/:slug?/"
+layout = "default"
+is_hidden = 1
+robot_index = "index"
+robot_follow = "follow"
+
+[proBlogList]
+postsPerPage = 10
+filter_type = "none"
+searchpage = "blog/blog"
+render = "specific"
+specific = "blog/post"
+
+[proBlogCategories]
+categoryPage = "blog/blog"
+==
+<?php
+function onStart() {
+    $this['islight'] = true;
+}
+?>
+==
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-9">{% component 'proBlogList' %}</div>
+        <div class="col-3">{% component 'proBlogCategories' %}</div>
+    </div>
+</div>

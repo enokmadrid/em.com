@@ -2,10 +2,13 @@ title = "Projects"
 url = "/projects"
 layout = "default"
 is_hidden = 1
+robot_index = "index"
+robot_follow = "follow"
 
 [builderList projects]
 modelClass = "Enok\FeaturedProjects\Models\Project"
 scope = "-"
+scopeValue = "{{ :scope }}"
 displayColumn = "title"
 noRecordsMessage = "No records found"
 detailsPage = "project"

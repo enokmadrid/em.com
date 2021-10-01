@@ -4,6 +4,7 @@ injectMainScript = 1
 
 [session]
 security = "all"
+redirect = "homepage"
 ==
 <!DOCTYPE html>
 <!--
@@ -42,13 +43,10 @@ security = "all"
   </head>
 
   <body>
-        
+    {% partial "mobile-menu" %}
+    {% partial "navigation-menu" %}
     {% page %}
-    
-  
     {% partial "footer" %}
-
-
 
     <script src="{{ ['assets/js/all.min.js']|theme }}"></script>
 

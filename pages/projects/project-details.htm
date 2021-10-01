@@ -2,6 +2,8 @@ title = "Project Details"
 url = "/project/:slug"
 layout = "default"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 
 [builderDetails projectDetails]
 modelClass = "Enok\FeaturedProjects\Models\Project"
@@ -42,8 +44,6 @@ function onStart()
 {% set prevPageUrl = attribute(projects[project.id - 2], detailsUrlParameter) %}
 {% set nextPageUrl = attribute(projects[project.id], detailsUrlParameter) %}
 
-{% partial "mobile-menu" %}
-{% partial "navigation-menu" %}
 
 <div class="jumbotron jumbotron-fluid dark shift-up has-overlay" style="backgrounded-pill-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url('{{ project.hero_image | media }}');">
     <div class="container text-center">
